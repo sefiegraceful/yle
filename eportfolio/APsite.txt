@@ -1,0 +1,717 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Araling Panlipunan| 2nd quarter </title>
+<style type="text/css">
+/*body*/
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:url("SPIDERMANN.jpeg") no-repeat center center fixed;background-size:cover;color:#fff;overflow-x:hidden;position:relative;min-height:100vh;}
+body::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:0;}
+
+/*containerz*/
+.container{position:relative;z-index:1;}
+
+/*head*/
+header{text-align:center;padding:50px 20px;background:linear-gradient(to right,rgba(255,0,0,0.9),rgba(139,0,0,0.9));box-shadow:0 0 25px crimson;}
+header h1{font-size:60px;margin:0;text-shadow:3px 3px 10px black;}
+header p{font-size:20px;color:gainsboro;letter-spacing:1px;}
+
+/*nav*/
+nav{display:flex;justify-content:center;gap:40px;padding:15px;background:rgba(139,0,0,0.9);border-bottom:2px solid crimson;box-shadow:0 0 10px crimson;}
+nav a{text-decoration:none;color:white;font-weight:bold;transition:0.3s;}
+nav a:hover{color:#ff3333;text-shadow:0 0 10px white;}
+
+/*sections*/
+section{max-width:1000px;margin:60px auto;padding:30px;background:rgba(139,0,0,0.85);border-radius:15px;box-shadow:0 0 20px rgba(255,0,0,0.7);}
+section h2{text-align:center;font-size:35px;margin-bottom:20px;text-transform:uppercase;color:#ff4b4b;text-shadow:0 0 10px #ff0000;}
+
+/*reviewer este summary hahah*/
+.reviewer{text-align:justify;font-size:18px;line-height:1.7;margin-bottom:40px;}
+
+/*flasgh*/
+.flashcard-container{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:25px;width:100%;margin-top:20px;}
+.flashcard{width:220px;height:160px;perspective:1000px;}
+.flashcard-inner{position:relative;width:100%;height:100%;transition:transform 0.8s;transform-style:preserve-3d;}
+.flashcard:hover .flashcard-inner{transform:rotateY(180deg);}
+.flashcard-front,.flashcard-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:12px;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;box-shadow:0 0 15px rgba(255,0,0,0.7);}
+.flashcard-front{background:#990000;}
+.flashcard-back{background:#222;color:#fff;transform:rotateY(180deg);}
+
+/*footer*/
+footer{text-align:center;padding:20px;background:rgba(0,0,0,0.85);font-size:15px;color:gainsboro;border-top:2px solid crimson;}
+
+
+/*back*/
+.back-top {text-align: center;margin-top: 40px;}
+.back-top a {display: inline-block;color: #ff3333;text-decoration: none;font-weight: bold;font-size: 18px;background: rgba(255, 0, 0, 0.2);padding: 10px 25px;border-radius: 30px;border: 2px solid #ff3333;transition: 0.3s;text-shadow: 0 0 10px crimson;box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);}
+.back-top a:hover {background: #ff3333;color: white;text-shadow: 0 0 15px white;box-shadow: 0 0 20px crimson;transform: scale(1.1);}
+
+
+</style>
+</head>
+
+<body>
+<div class="container">
+<header id="top">
+<h1>Araling Panlipunan| 2nd quarter </h1>
+<p>Josephine Grace P. Labador | 9-FIDELITY</p>
+</header>
+
+<nav>
+<a href="#lesson1">Lesson 1</a>
+<a href="#lesson2">Lesson 2</a>
+<a href="#lesson3">Lesson 3</a>
+<a href="#lesson4">Lesson 4</a>
+<a href="#lesson5">Lesson 5</a>
+<a href="#lesson6">Lesson 6</a>
+</nav>
+
+<section id="lesson1">
+
+<h2>Lesson 1: Demand</h2>
+
+<div class="reviewer">
+<p><b>Ang demand</b> ay tumutukoy sa dami ng produkto o serbisyo na <b>nais</b> at <b>kayang bilhin</b> ng mga mamimili sa iba’t ibang presyo sa loob ng isang takdang panahon. Ang konseptong ito ay nagpapakita kung gaano kalaki ang kagustuhan ng mamimili na bumili ng isang produkto batay sa presyo nito at sa kanyang kakayahang magbayad. Ang demand ay isang mahalagang bahagi ng ekonomiya sapagkat dito nakabatay ang desisyon ng mga prodyuser kung gaano karaming produkto ang kanilang gagawin at ipagbibili sa merkado.</p>
+<p>Mayroon itong <b>inverse relationship</b> sa presyo: kapag <b>mababa ang presyo</b>, <b>tumataas ang demand</b>; samantalang kapag <b>mataas ang presyo</b>, <b>bumababa ang demand</b>. Ibig sabihin, karaniwang mas maraming mamimili ang bibili ng produkto kapag mas mura ito. Ito ang tinatawag na <b>Batas ng Demand (Law of Demand)</b> — na nagsasaad na habang tumataas ang presyo ng isang produkto, bumababa ang dami ng demand dito, <i>ceteris paribus</i> o “kapag ang ibang salik ay hindi nagbabago.”</p>
+<p>Ang <i>ceteris paribus</i> ay isang mahalagang konsepto sa ekonomiks na nangangahulugang “all other things being equal.” Ibig sabihin, kapag sinusuri ang epekto ng pagbabago sa presyo ng isang produkto sa demand nito, ipinapalagay na ang lahat ng ibang salik tulad ng kita, panlasa, at presyo ng ibang produkto ay nananatiling pareho.</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Tatlong Paraan ng Pagpapakita ng Demand</h3>
+<p>May tatlong paraan upang ipakita ang ugnayan ng presyo at dami ng demand: <b>Demand Schedule</b>, <b>Demand Curve</b>, at <b>Demand Function</b>.</p>
+
+<ul>
+<li><b>1. Demand Schedule</b> – isang talaan na nagpapakita ng dami ng produktong handang bilhin ng mga mamimili sa iba’t ibang antas ng presyo. Halimbawa, kung ang kendi ay nagkakahalaga ng ₱10, maaaring 100 piraso ang mabili; ngunit kung tataas ito sa ₱20, baka 50 piraso na lamang ang bilhin.</li>
+<li><b>2. Demand Curve</b> – isang grapikong representasyon ng ugnayan ng presyo at dami ng demand. Karaniwan itong pababa mula kaliwa-pataas sa kanan (downward sloping curve) upang ipakita ang kabaligtarang relasyon ng presyo at demand.</li>
+<li><b>3. Demand Function</b> – isang matematikal na pormula na naglalarawan ng relasyon ng presyo at dami ng demand. Halimbawa, <i>Qd = 60 - 10P</i> kung saan ang <i>Qd</i> ay quantity demanded at ang <i>P</i> ay presyo. Kapag tumaas ang presyo (P), nababawasan ang dami ng demand (Qd).</li>
+</ul>
+
+<img src="ap2.PNG" alt="Demand Curve Graph" style="display:block;margin:30px auto;border-radius:10px;border:3px solid #ff4b4b;box-shadow:0 0 20px crimson;width:90%;max-width:480px;">
+<p style="text-align:center;font-style:italic;color:gainsboro;">Larawan 1: Halimbawa ng Demand Curve na nagpapakita ng kabaligtarang relasyon ng presyo at demand.</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Mga Salik na Nakaaapekto sa Demand (Di-Presyong Salik)</h3>
+<p>Hindi lamang presyo ang nakaaapekto sa demand. May iba pang salik na maaaring magpataas o magpababa ng dami ng produktong gusto ng mamimili kahit hindi nagbabago ang presyo nito. Ito ay tinatawag na mga <b>di-presyong salik</b> o <b>non-price factors</b>:</p>
+
+<ul>
+<li><b>1. Kita (Income)</b> – Habang tumataas ang kita ng isang tao, tumataas din ang kanyang kakayahan na bumili ng mga produkto. Kapag bumaba naman ang kita, nababawasan ang demand. Halimbawa, kapag tumaas ang sahod, mas madalas kang kakain sa labas o bibili ng branded na damit.</li>
+<li><b>2. Panlasa o Kagustuhan (Taste and Preference)</b> – Kapag uso o popular ang isang produkto, tumataas ang demand nito. Ngunit kapag nawala sa uso, bumababa ang demand. Halimbawa, ang mga bagong modelo ng cellphone ay madalas mabili sa umpisa dahil sa mataas na interes ng publiko.</li>
+<li><b>3. Dami ng Mamimili (Number of Buyers)</b> – Kapag mas maraming mamimili sa pamilihan, mas mataas ang kabuuang demand. Halimbawa, sa panahon ng enrollment, tumataas ang demand sa school supplies. Kabilang dito ang <i>bandwagon effect</i> — kapag ang mga tao ay bumibili dahil sumasabay lamang sila sa uso o sa karamihan.</li>
+<li><b>4. Presyo ng Magkaugnay na Produkto (Prices of Related Goods)</b> – May dalawang uri:
+<ul>
+<li><i>Complementary goods</i> – mga produktong sabay ginagamit, tulad ng kape at asukal. Kapag tumaas ang presyo ng isa, bumababa ang demand sa isa pa.</li>
+<li><i>Substitute goods</i> – mga produktong pamalit sa isa’t isa, tulad ng kape at tsokolate. Kapag tumaas ang presyo ng kape, maaaring tumaas ang demand sa tsokolate bilang pamalit.</li>
+</ul></li>
+<li><b>5. Inaasahan ng Mamimili sa Presyo sa Hinaharap (Consumer Expectations)</b> – Kapag inaasahan ng mga mamimili na tataas ang presyo ng isang produkto sa hinaharap, kadalasan ay bibili na sila ngayon. Halimbawa, bago dumating ang bagyo, tumataas ang demand sa mga de-lata, kandila, at tubig dahil sa inaasahang pagtaas ng presyo o kakulangan ng suplay.</li>
+</ul>
+
+<img src="ap1.PNG" alt="Consumer Decision Making" style="display:block;margin:30px auto;border-radius:10px;border:3px solid #ff4b4b;box-shadow:0 0 20px crimson;width:90%;max-width:520px;">
+<p style="text-align:center;font-style:italic;color:gainsboro;">Larawan 2: Halimbawa ng mga desisyong kinakaharap ng mamimili batay sa presyo, panlasa, at kakayahang bumili.</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Pangunahing Kaisipan</h3>
+<p>Ang konsepto ng demand ay isa sa mga pinakapundamental na bahagi ng ekonomiya. Ang pagkilala sa mga salik na nakaaapekto rito ay tumutulong upang maunawaan kung bakit nagbabago ang presyo at dami ng produktong nasa merkado. Bilang mamimili, mahalagang maintindihan ang ugnayan ng presyo at demand upang makagawa ng matalinong desisyon sa paggastos at pag-iimpok. Ang demand ay hindi lamang basta dami ng produkto, kundi salamin din ng ating mga kagustuhan, pangangailangan, at kakayahan bilang kalahok sa ekonomiya.</p>
+</div>
+
+<div class="flashcard-container">
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang kahulugan ng demand?</div><div class="flashcard-back">Dami ng produkto o serbisyo na nais at kayang bilhin ng mamimili sa iba’t ibang presyo sa takdang panahon.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang Batas ng Demand?</div><div class="flashcard-back">Kapag mababa ang presyo, mataas ang demand; kapag mataas ang presyo, mababa ang demand.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang ibig sabihin ng “ceteris paribus”?</div><div class="flashcard-back">Ipinapalagay na ang presyo lamang ang nagbabago habang ang ibang salik ay hindi.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang tatlong paraan ng pagpapakita ng demand?</div><div class="flashcard-back">Demand Schedule, Demand Curve, at Demand Function.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Halimbawa ng Demand Function</div><div class="flashcard-back">Qd = 60 - 10P (kung saan Qd ay quantity demanded at P ay presyo)</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang mga di-presyong salik na nakaaapekto sa demand?</div><div class="flashcard-back">Kita, Panlasa, Dami ng Mamimili, Presyo ng Magkaugnay na Produkto, at Inaasahan ng Mamimili.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang “bandwagon effect”?</div><div class="flashcard-back">Pagtaas ng demand dahil gusto ng mamimili na sumabay sa uso o marami nang bumibili.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Bakit mahalagang pag-aralan ang demand?</div><div class="flashcard-back">Upang matutong gumawa ng matalinong desisyon sa pagbili at pag-unawa sa galaw ng ekonomiya.</div></div></div>
+</div>
+<div class="back-top"><a href="#top">Back to Top</a></div>
+</section>
+
+
+<section id="lesson2">
+<h2>Lesson 2: Supply</h2>
+<div class="reviewer">
+<p><b>Ang supply</b> ay tumutukoy sa dami ng produkto o serbisyo na <b>handang ipagbili</b> at <b>kayang ipagbili</b> ng mga prodyuser sa iba’t ibang presyo sa loob ng isang takdang panahon. Ipinapakita nito ang ugnayan ng presyo at ng dami ng produkto na gustong ipagbili sa pamilihan. Ang supply ay kabaligtaran ng demand: habang ang demand ay nakabatay sa kagustuhan at kakayahan ng mamimili, ang supply naman ay nakabatay sa kagustuhan at kakayahan ng prodyuser na magbenta.</p>
+<p>Ang ugnayan ng presyo at dami ng supply ay <b>direkta</b> o <b>positibo</b>: kapag <b>tumataas ang presyo</b> ng produkto, <b>tumataas din ang dami ng supply</b> na handang ipagbili ng mga prodyuser. Samantalang kapag <b>bumababa ang presyo</b>, <b>bumababa rin ang dami ng supply</b>. Ito ang tinatawag na <b>Batas ng Supply (Law of Supply)</b>.</p>
+<p>Ang Batas ng Supply ay nagsasaad na “habang tumataas ang presyo ng isang produkto, dumarami ang dami ng produkto na handang ipagbili ng prodyuser, <i>ceteris paribus</i>.” Ibig sabihin, ang iba pang salik tulad ng teknolohiya, buwis, at gastusin ay nananatiling pareho.</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Tatlong Paraan ng Pagpapakita ng Supply</h3>
+<ul>
+<li><b>1. Supply Schedule</b> – isang talaan na nagpapakita ng dami ng produkto na kayang ipagbili ng mga prodyuser sa iba’t ibang antas ng presyo. Halimbawa:</li>
+</ul>
+<table style="width:100%;text-align:center;border-collapse:collapse;margin:20px 0;">
+<tr style="background:rgba(255,0,0,0.6);"><th>Presyo (₱)</th><th>Dami ng Face Mask na Ipagbibili</th></tr>
+<tr style="background:rgba(255,255,255,0.1);"><td>100</td><td>10 piraso</td></tr>
+<tr style="background:rgba(255,255,255,0.1);"><td>200</td><td>20 piraso</td></tr>
+<tr style="background:rgba(255,255,255,0.1);"><td>300</td><td>30 piraso</td></tr>
+<tr style="background:rgba(255,255,255,0.1);"><td>400</td><td>40 piraso</td></tr>
+<tr style="background:rgba(255,255,255,0.1);"><td>500</td><td>50 piraso</td></tr>
+</table>
+<p>Makikita sa halimbawa na habang tumataas ang presyo, mas marami ring produkto ang handang ipagbili ng mga prodyuser.</p>
+
+<ul>
+<li><b>2. Supply Curve</b> – isang grapikong representasyon ng ugnayan ng presyo at quantity supplied. Karaniwan itong <b>pataas</b> mula kaliwa-pakanan (upward sloping) upang ipakita ang direktang relasyon ng presyo at supply.</li>
+</ul>
+
+<img src="supply1.PNG" alt="Supply Curve Graph" style="display:block;margin:30px auto;border-radius:10px;border:3px solid #ff4b4b;box-shadow:0 0 20px crimson;width:90%;max-width:550px;">
+<p style="text-align:center;font-style:italic;color:gainsboro;">Larawan 1: Supply Curve – habang tumataas ang presyo, tumataas din ang dami ng produktong ipagbibili.</p>
+
+<ul>
+<li><b>3. Supply Function</b> – isang matematikal na pormula na naglalarawan ng relasyon ng presyo at dami ng supply. Halimbawa:</li>
+</ul>
+
+<p style="text-align:center;background:rgba(0,0,0,0.6);padding:15px;border-radius:10px;border:1px solid #ff4b4b;"><b>Qs = c + bP</b></p>
+<p>Kung saan:</p>
+<ul>
+<li><b>Qs</b> – quantity supplied</li>
+<li><b>c</b> – intercept (ang dami ng produkto kapag ang presyo ay 0)</li>
+<li><b>b</b> – slope o pagbabago ng supply sa bawat pagtaas ng presyo</li>
+<li><b>P</b> – presyo</li>
+</ul>
+
+<p>Halimbawa sa <b>Face Mask</b>:</p>
+<p style="text-align:center;background:rgba(0,0,0,0.6);padding:10px;border-radius:10px;border:1px solid #ff4b4b;"><b>Qs = 0 + 10P</b></p>
+<p>Kapag <b>P = 1</b>,</p>
+<p>Qs = 0 + 10(1) → Qs = 10</p>
+<p>Ibig sabihin, kung ₱1 ang presyo, 10 piraso ang kayang ipagbili. Kung tataas ang presyo sa ₱5,</p>
+<p>Qs = 0 + 10(5) → Qs = 50</p>
+<p>Makikita rito ang direktang ugnayan ng presyo at dami ng supply — kapag tumataas ang presyo, mas maraming produkto ang ipinagbibili.</p>
+
+<img src="supply2.PNG" alt="Movement Along Supply Curve" style="display:block;margin:30px auto;border-radius:10px;border:3px solid #ff4b4b;box-shadow:0 0 20px crimson;width:90%;max-width:550px;">
+<p style="text-align:center;font-style:italic;color:gainsboro;">Larawan 2: Paggalaw sa Supply Curve o Moving Along the Curve – ipinapakita ang pagtaas ng supply habang tumataas ang presyo.</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Paggalaw at Paglipat sa Supply Curve</h3>
+<p><b>Paggalaw sa Supply Curve</b> ay nagaganap kapag nagbago ang presyo ng produkto. Halimbawa, tumaas ang presyo ng face mask kaya dumami ang ipagbibili ng mga prodyuser. Kapag bumaba ang presyo, bababa rin ang dami ng produkto.</p>
+<p><b>Paglipat ng Supply Curve</b> ay dulot ng pagbabago ng mga <b>di-presyong salik</b> gaya ng teknolohiya, buwis, o panahon. Kapag bumuti ang teknolohiya, lilipat ang supply curve pakanan (pagtaas ng supply). Kapag tumaas ang buwis o gastos sa produksiyon, lilipat ito pakaliwa (pagbaba ng supply).</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Mga Salik na Nakaaapekto sa Supply</h3>
+<ul>
+<li><b>1. Presyo ng Input o Gastos sa Produksyon</b> – Kapag tumaas ang presyo ng hilaw na materyales, suweldo, o kagamitan, bumababa ang supply. Kapag bumaba ang gastos, tumataas ang supply.</li>
+<li><b>2. Teknolohiya</b> – Ang paggamit ng makabagong teknolohiya ay nagpapabilis ng produksiyon at nagpapataas ng supply.</li>
+<li><b>3. Dami ng Prodyuser</b> – Mas maraming negosyong lumalahok, mas mataas ang kabuuang supply.</li>
+<li><b>4. Buwis at Subsidy</b> – Ang buwis ay dagdag gastos kaya bumababa ang supply; ang subsidy ay kabaligtaran dahil tumutulong ito upang mapataas ang supply.</li>
+<li><b>5. Inaasahan ng Prodyuser</b> – Kapag inaasahang tataas ang presyo, maaaring ipagpaliban ng prodyuser ang pagbebenta upang kumita nang mas malaki sa hinaharap.</li>
+<li><b>6. Panahon o Klima</b> – Ang mga produktong agrikultural ay lubhang apektado ng panahon. Kapag tagtuyot o bagyo, bumababa ang supply ng mga ani.</li>
+</ul>
+
+<h3 style="color:#ff4b4b;text-align:center;">Pangunahing Kaisipan</h3>
+<p>Ang supply ay mahalagang bahagi ng pamilihan. Ipinapakita nito kung paano tumutugon ang mga prodyuser sa pagbabago ng presyo at ng mga salik ng produksiyon. Sa pag-unawa sa supply, natututuhan nating suriin kung paano bumabalanse ang dami ng produktong ginagawa sa pangangailangan ng mamimili. Ang supply at demand ang bumubuo sa ekwilibriyong presyo na nagtatakda ng katatagan sa ekonomiya.</p>
+</div>
+
+<div class="flashcard-container">
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang supply?</div><div class="flashcard-back">Dami ng produkto o serbisyo na handa at kayang ipagbili ng mga prodyuser sa iba’t ibang presyo sa takdang panahon.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang Batas ng Supply?</div><div class="flashcard-back">Habang tumataas ang presyo ng produkto, dumarami ang dami ng produkto na kayang ipagbili ng mga prodyuser, ceteris paribus.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang ibig sabihin ng “ceteris paribus”?</div><div class="flashcard-back">Ipinapalagay na ang ibang salik ay hindi nagbabago habang sinusuri ang ugnayan ng presyo at supply.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang Supply Function?</div><div class="flashcard-back">Pormula: Qs = c + bP; nagpapakita ng ugnayan ng presyo at quantity supplied.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang halimbawa ng Supply Function?</div><div class="flashcard-back">Qs = 0 + 10P; kung P=1, Qs=10; kung P=5, Qs=50.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang pagkakaiba ng paggalaw at paglipat ng supply curve?</div><div class="flashcard-back">Paggalaw: dahil sa pagbabago ng presyo. Paglipat: dulot ng di-presyong salik gaya ng teknolohiya o buwis.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Paano nakaaapekto ang buwis sa supply?</div><div class="flashcard-back">Ang buwis ay nagpapataas ng gastos sa produksyon kaya bumababa ang supply.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Paano nakaaapekto ang teknolohiya sa supply?</div><div class="flashcard-back">Mas mahusay na teknolohiya ay nagpapabilis sa produksiyon kaya tumataas ang supply.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang epekto ng klima sa supply?</div><div class="flashcard-back">Ang masamang panahon ay nagpapababa ng supply ng mga produktong agrikultural.</div></div></div>
+<div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Bakit mahalagang pag-aralan ang supply?</div><div class="flashcard-back">Upang maunawaan kung paano tumutugon ang mga prodyuser sa presyo at kung paano naaapektuhan ang ekonomiya.</div></div></div>
+</div>
+<div class="back-top"><a href="#top">Back to Top</a></div>
+</section>
+
+
+<section id="lesson3">
+ <h2>Lesson 3: Price Elasticity ng Demand at Supply</h2>
+ <div class="reviewer">
+<p><b>Ano ang Elasticity?</b> — Ang <b>elasticity</b> ay sukatan ng tugon o responsiveness ng dami (quantity) kapag nagbago ang presyo. Ginagamit ito upang makita kung gaano kalaki ang epekto ng pagbabago sa presyo sa dami na bibilhin o ipagbibili.</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Price Elasticity of Demand</h3>
+<p><b>Definition:</b><br>
+Ang price elasticity ng demand ay ang ratio ng porsiyentong pagbabago ng quantity demanded (ΔQd) sa porsiyentong pagbabago ng presyo (ΔP). </p>
+<p><b>Formula</b><br>
+
+<div class="formula">
+E<sub>d</sub> = (% pagbabago sa dami) / (% pagbabago sa presyo)
+</div>
+
+<div class="formula">
+%ΔQ<sub>d</sub> = ((Q<sub>2</sub> - Q<sub>1</sub>) / ((Q<sub>1</sub> + Q<sub>2</sub>)/2)) × 100
+</div>
+
+<div class="formula">
+%ΔP = ((P<sub>2</sub> - P<sub>1</sub>) / ((P<sub>1</sub> + P<sub>2</sub>)/2)) × 100
+</div>
+
+<div class="desc">
+<p><strong>Q<sub>1</sub></strong> at <strong>Q<sub>2</sub></strong> = unang at bagong dami ng demand</p><p><strong>P<sub>1</sub></strong> at <strong>P<sub>2</sub></strong> = unang at bagong presyo</p><p><strong>E<sub>d</sub></strong> = sinusukat kung gaano kalaki ang reaksyon ng demand kapag nagbago ang presyo</p>
+</div>
+
+<p><b>Interpretation (absolute value ng E<sub>d</sub>):</b></p>
+<ul>
+<li>|E<sub>d</sub>| > 1 → <b>Elastic</b> — malaki ang tugon ng demand sa pagbabago ng presyo</li>
+<li>|E<sub>d</sub>| &lt; 1 → <b>Inelastic</b> — maliit lang ang tugon ng demand</li>
+<li>|E<sub>d</sub>| = 1 → <b>Unitary Elastic</b> — proporsyonal ang pagbabago ng presyo at dami</li>
+<li>|E<sub>d</sub>| = ∞ → <b>Perfectly Elastic</b> — kahit maliit na pagbabago sa presyo ay malaking pagbabago sa demand</li>
+<li>|E<sub>d</sub>| = 0 → <b>Perfectly Inelastic</b> — walang pagbabago sa demand kahit magbago ang presyo</li>
+</ul>
+
+<p><b>Mga Salik na Nakaaapekto sa Elasticity ng Demand:</b></p>
+<ul>
+<li>Maraming <b>alternatibo / substitutes</b> — kapag maraming mapagpipilian, mas magiging elastic ang demand</li>
+<li>Uri ng produkto: <b>luho vs. pangangailangan</b> — luho ay karaniwang mas elastic</li>
+<li>Bahagi ng kita na ginagastos sa produkto — kung maliit lang ang bahagi ng kita, mas inelastic</li>
+<li><b>Panahon (time)</b> — sa mas mahabang panahon, mas maraming pagbabago ang maaaring mangyari, kaya nagiging mas elastic</li>
+<li>Pagkakaalam at kaugalian ng mamimili — kapag sanay na sa produkto, maaaring hindi agad bumaba ang demand kahit tumaas ang presyo</li>
+</ul>
+
+<p><b>Application / Total Revenue Test:</b><br>
+— Kung demand ay **inelastic** (|E<sub>d</sub>| < 1), pagtaas ng presyo → **tataas** ang total revenue  
+— Kung demand ay **elastic** (|E<sub>d</sub>| > 1), pagtaas ng presyo → **bababa** ang total revenue  
+— Kung unitary elastic, pagbabago sa presyo ay hindi gaanong makakaapekto sa total revenue</p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Price Elasticity of Supply (E<sub>s</sub>)</h3>
+<p><b>Definition:</b><br>
+Ang price elasticity ng supply ay ang porsiyentong pagbabago sa quantity supplied (ΔQs) hinati sa porsiyentong pagbabago ng presyo (ΔP).</p>
+
+<p><b>Formula </b><br>ES = (%ΔQ / %ΔP) = [(Q2 - Q1) / ((Q2 + Q1) / 2)] ÷ [(P2 - P1) / ((P2 + P1) / 2)]</p>
+
+<p><b>Interpretation:</b></p>
+<ul>
+<li>E<sub>s</sub> > 1 → <b>Elastic Supply</b></li>
+<li>E<sub>s</sub> &lt; 1 → <b>Inelastic Supply</b></li>
+<li>E<sub>s</sub> = 1 → <b>Unitary Elastic Supply</b></li>
+</ul>
+
+<p><b>Mga Salik na Nakaaapekto sa Elasticity ng Supply:</b></p>
+<ul>
+<li><b>Panahon (time period)</b> — sa maikling panahon, mahirap baguhin ang produksiyon kaya mas inelastic; sa mahabang panahon, mas mahalagang respond</li>
+<li>Availability ng <b>resources / input materials</b> — higit na madali makakuha ng input → mas elastic</li>
+<li>Teknolohiya — mas advanced na teknolohiya → mas mabilis makapag-adjust → mas elastic</li>
+<li>Flexibility ng produksiyon — kung kayang mabilis mag-adjust ng produksyon sa demand changes</li>
+<li>Kalagayan ng industriya o kapasidad — kung karamihan sa produksiyon ay puno na (full capacity), magiging inelastic</li>
+</ul>
+
+<p><b>Uri ng Elasticity (Demand & Supply) / Degree:</b></p>
+<ul>
+<li><b>Perfectly Elastic</b> (horizontal curve) — kahit maliit na pagbabago sa presyo ay malaking pagbabago sa dami</li>
+<li><b>Relatively (or Highly) Elastic</b></li>
+<li><b>Unitary Elastic</b></li>
+<li><b>Relatively (or Highly) Inelastic</b></li>
+<li><b>Perfectly Inelastic</b> (vertical curve) — ang dami ay hindi nagbabago kahit magbago ang presyo</li>
+</ul>
+
+<h3 style="text-align:center;">Mga Halimbawa</h3>
+<p>​Tingnan ang mga larawan sa ibaba para mas maunawaan ang konsepto:</p>
+<div style="text-align:center;">
+<img src="PD1.PNG" alt="Elastic Demand Graph example" style="max-width:80%;margin:20px auto;display:block;border:2px solid #fff;" >
+
+<img src="PD2.PNG" alt="Demand elasticity computation" style="max-width:80%;margin:20px auto;display:block;border:2px solid #fff;" >
+
+<img src="PS1.PNG" alt="Supply elasticity graph  example" style="max-width:80%;margin:20px auto;display:block;border:2px solid #fff;" />
+
+<img src="PS2.PNG" alt="Supply elasticity computation" style="max-width:80%;margin:20px auto;display:block;border:2px solid #fff;" >
+
+</div>
+<div class="flashcard-container">
+<div class="flashcard">
+<div class="flashcard-inner">
+<div class="flashcard-front"><b>Elastic Demand</b></div>
+<div class="flashcard-back">Malaki ang pagbabago ng demand kahit maliit lang ang presyo.</div>
+</div>
+</div>
+
+<div class="flashcard">
+<div class="flashcard-inner">
+<div class="flashcard-front"><b>Inelastic Demand</b></div>
+<div class="flashcard-back">Maliit lamang ang pagbabago ng demand kahit magbago ang presyo.</div>
+</div>
+</div>
+
+<div class="flashcard">
+<div class="flashcard-inner">
+<div class="flashcard-front"><b>Perfectly Elastic</b></div>
+<div class="flashcard-back">Kahit bawas o taas ng presyo, sobrang laki ang tugon ng dami.</div>
+</div>
+</div>
+
+<div class="flashcard">
+<div class="flashcard-inner">
+<div class="flashcard-front"><b>Perfectly Inelastic</b></div>
+<div class="flashcard-back">Walang pagbabago sa dami kahit magbago ang presyo.</div>
+</div>
+
+
+</section>
+
+<div style="display:flex; justify-content:center; align-items:center; width:100%; margin-top:20px; margin-bottom:20px;"><a href="https://docs.google.com/document/d/1-RfWsyjHT3MhXwrKVPaIM5V3GYDDQqeEYj4yYBbMVKo/edit?fbclid=IwY2xjawNf_M9leHRuA2FlbQIxMABicmlkETFpRkJpak5JOUg1YXE5VDZkAR43UTIaO0kJEqctNIPMVjFu03BJs44TIYjvj1dIHSU-jEn2Yze1RNJ6anSXNA_aem_tpZ7JOkDmaIH-R1GphMc2A&tab=t.0" style="background:linear-gradient(90deg, #ff0000, #cc0000);color:white; padding:12px 28px; border-radius:25px; font-weight:bold; text-decoration:none; box-shadow:0 0 15px rgba(255,0,0,0.7); text-shadow:0 0 5px black; transition:0.3s;">
+karagdagang impormasyon dito!
+</a>
+</div>
+
+<div class="back-top">
+<div class="back-top"><a href="#top">Back to Top</a></div>
+</div>
+
+<section id="lesson4">
+ <h2>Lesson 4: Interaksyon ng Demand at Suplay</h2>
+ <div class="reviewer"> <p>Sa araling ito, tatalakayin natin ang kung paano nagtutugma (o hindi) ang dami ng gusto & kayang bilhin ng mamimili (demand) at ang dami ng gustong & kayáng ipagbili ng prodyuser (supply) sa pamilihan — kasama ang mga konsepto ng ekwilibriyo, kakulangan (shortage) at kalabisan (surplus). </p>
+
+<h3 style="color:#ff4b4b;text-align:center;">Ano ang Interaksyon ng Demand at Suplay?</h3> 
+<p>Ang “interaksyon ng demand at suplay” ay ang pagkakasalubong ng dalawang puwersang pang-ekonomiya sa pamilihan: ang mga mamimili na gustong bumili, at ang mga prodyuser na gustong magbenta. </p> 
+<p>Sa isang ideal na kalagayan, makakamit ang estado ng <b>ekwilibriyo</b> kapag ang dami ng demand (Qd) ay pantay sa dami ng supply (Qs) sa isang partikular na presyo (P). </p> 
+
+<h3 style="color:#ff4b4b;text-align:center;">Ekwilibriyo, Shortage at Surplus</h3> 
+<ul> 
+<li><b>Ekwilibriyo (Equilibrium):</b> Punto kung saan Qd = Qs. Dito ang tinatawag na <i>ekwilibriyong presyo</i> (P*) at <i>ekwilibriyong dami</i> (Q*) — halimbawa: P = ₱3 at Q = 30 piraso. </li> 
+<li><b>Surplus (Kalabisan):</b> Sitwasyon kung saan Qs > Qd — mas marami ang ipagbibili kaysa gusto at kayang bilhin ng mamimili → may natirang produkto sa pamilihan. </li> 
+<li><b>Shortage (Kakulangan):</b> Sitwasyon kung saan Qd > Qs — mas maraming gustong bumili kaysa may ipagbili → may kakulangan sa produkto sa pamilihan.</li> 
+</ul> 
+
+<h3 style="color:#ff4b4b;text-align:center;"> Bakit Mahalaga ito sa Pamilihan?</h3> 
+<p>Ang interaksyon ng demand at supply ang tumutukoy sa pag-takda ng presyo at dami sa pamilihan. Kapag may surplus o shortage, ang presyong P ay may tendensiyang magbago upang bumalik sa ekwilibriyo. </p> 
+<p>Halimbawa: Kung mataas ang presyo sa P > P*, Qs mas mataas kaysa Qd → may kalabisan → tumutulak pababa ang presyo. Kung mababa naman ang presyo sa P < P*, Qd mas mataas kaysa Qs → kakulangan → tumutulak pataas ang presyo hanggang bumalik sa ekwilibriyo.</p> 
+
+<h3 style="color:#ff4b4b;text-align:center;">Mga Paraan ng Pag-pakita ng Interaksyon</h3> 
+<p>May tatlong karaniwang paraan upang ipakita ang ugnayan ng demand at supply sa pamilihan:</p> 
+<ul> 
+<li><b>Market Schedule / Talahanayan:</b> Nagpapakita ng dami demanded at dami supplied sa iba’t ibang antas ng presyo. (Halimbawa: Market Schedule para sa cookies)</li> 
+<li><b>Market Curve / Grap:</b> Graph kung saan ipinapakita ang kurba ng demand (pababa) at kurba ng supply (pataas) at ang punto ng ekwilibriyo. </li> 
+<li><b>Market Function / Matematika:</b> Pormula tulad ng Qd = a – bP at Qs = c + dP, kung saan puwedeng hanapin ang ekwilibriyong presyo at dami. </li> 
+</ul> 
+
+<h3>Mga Visual Diagram ng Interaksyon</h3>
+<div class="photo-gallery">
+<div class="photo-item">
+<img src="mf.PNG" alt="Market Function Graph">
+</div>
+<div class="photo-item">
+<img src="mc.PNG" alt="Market Curve Example">
+</div>
+<div class="photo-item">
+<img src="mc2.PNG" alt="Market Schedule Table">
+</div>
+<div class="photo-item">
+<img src="ms1.PNG" alt="Market Situation">
+</div>
+</div>
+
+<h3 style="color:#ff4b4b;text-align:center;">Buod: Table ng Mahahalagang Konsepto</h3> 
+<table style="width:100%;text-align:left;border-collapse:collapse;margin:20px 0;background:rgba(255,255,255,0.1);"> 
+<tr style="background:rgba(255,0,0,0.6);color:#fff;"><th>Konsepto</th><th>Kahulugan</th></tr> <tr><td>Ekwilibriyo</td>
+
+<td>Kalagayan sa pamilihan kung saan ang dami ng demand (Qd) ay katumbas ng dami ng supply (Qs) sa isang partikular na presyo.</td></tr> <tr><td>Surplus (Kalabisan)</td><td>Q s &gt; Q d → labis ang supply kaysa demand → natitira ang produkto.</td></tr> <tr><td>Shortage (Kakulangan)</td><td>Q d &gt; Q s → mas maraming gustong bumili kaysa may ipagbili → kakulangan sa produkto.</td></tr> <tr><td>Market Schedule</td><td>Talahanayan na naglalarawan ng Q d at Q s sa iba’t ibang presyo.</td></tr> <tr><td>Market Curve</td><td>Grapikong representasyon ng demand at supply; makikita ang slope at punto ng ekwilibriyo.</td></tr> <tr><td>Market Function</td><td>Pormulang Qd = a – bP o Qs = c + dP upang kalkulahin ang ekwilibriyong presyo at dami.</td></tr> </table> 
+
+<h3 style="color:#ff4b4b;text-align:center;">Flashcards para sa Review</h3> 
+<div class="flashcard-container"> <div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang ekwilibriyo?</div><div class="flashcard-back">Kalagayan kung saan Qd = Qs sa isang tiyak na presyo at dami.</div></div></div> <div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang mangyayari kapag P &gt; P*?</div><div class="flashcard-back">Supply mas mataas kaysa demand → nagiging surplus → presyong bumababa.</div></div></div> <div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Ano ang mangyayari kapag P &lt; P*?</div><div class="flashcard-back">Demand mas mataas kaysa supply → nagiging shortage → presyong tumataas.</div></div></div> <div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Anong tatlong paraan ng pagpapakita ng interaksyon ng demand at supply?</div><div class="flashcard-back">Market Schedule, Market Curve, Market Function.</div></div></div> <div class="flashcard"><div class="flashcard-inner"><div class="flashcard-front">Paano mo makukuha ang ekwilibriyong presyo sa pamamagitan ng market function?</div><div class="flashcard-back">Pagtutumbas ng Qd = Qs gamit ang pormula Qd = a – bP at Qs = c + dP at pag-solve para sa P.</div></div></div> </div> <div class="back-top"><a href="#top">Back to Top</a></div> 
+</div> </section>
+
+
+<section id="lesson5" style="background:#000; color:white; font-family:'Poppins',sans-serif; padding:50px 20px;">
+<h1 style="text-align:center; font-size:2.5rem; background:linear-gradient(90deg, red, darkred); -webkit-background-clip:text; -webkit-text-fill-color:transparent; text-transform:uppercase; letter-spacing:2px; font-weight:900; text-shadow:0 0 15px red;">Lesson 5: Estruktura ng Pamilihan
+</h1>
+
+<p style="max-width:900px; margin:auto; text-align:justify; font-size:1.1rem;">
+Ang <strong>pamilihan</strong> ay isang lugar kung saan nagtatagpo ang mga mamimili at prodyuser upang ipagpalit ang mga produkto at serbisyo. 
+Dito nabubuo ang presyo batay sa interaksyon ng demand at supply. 
+Ang estruktura ng pamilihan ay tumutukoy sa kalagayan o kondisyon ng pamilihan kung saan nakabatay ang ugnayan ng mga mamimili at nagbebenta.
+</p>
+
+<h2 style="text-align:center; margin-top:50px; font-size:2rem; background:linear-gradient(90deg, #ff0000, #c00000); -webkit-background-clip:text; -webkit-text-fill-color:transparent; text-transform:uppercase; letter-spacing:1px; font-weight:800;">
+Apat na Pangunahing Estruktura ng Pamilihan
+</h2>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:40px;">
+
+<div style="background:rgba(20,20,20,0.9); border:2px solid red; border-radius:15px; padding:20px; transition:0.4s; box-shadow:0 0 15px rgba(255,0,0,0.3);">
+<h3 style="color:#ff3333; text-align:center; font-size:1.5rem;">Perfect Competition (Ganap na Kompetisyon)</h3>
+<img src="perfect_competition.png" alt="Perfect Competition" style="width:100%; border-radius:10px; margin:15px 0;">
+<p><strong>Kahulugan:</strong> Ang ganap na kompetisyon ay kalagayang may napakaraming nagbebenta at mamimili. Ang mga produkto ay magkakatulad at walang sinumang may kontrol sa presyo.</p>
+<ul style="margin-top:10px;">
+<li>Maraming maliliit na prodyuser at mamimili</li>
+<li>Magkakatulad ang produkto (homogenous)</li>
+<li>Malayang paglabas-pasok sa pamilihan</li>
+<li>Presyo ang tanging batayan sa pagpili ng mamimili</li>
+</ul>
+<p><strong>Halimbawa:</strong> Palengke ng gulay, bigas, o isda sa mga lokal na merkado.</p>
+</div>
+
+<div style="background:rgba(20,20,20,0.9); border:2px solid red; border-radius:15px; padding:20px; transition:0.4s; box-shadow:0 0 15px rgba(255,0,0,0.3);">
+<h3 style="color:#ff3333; text-align:center; font-size:1.5rem;">Monopolistic Competition</h3>
+<img src="monopolistic_competition.png" alt="Monopolistic Competition" style="width:100%; border-radius:10px; margin:15px 0;">
+<p><strong>Kahulugan:</strong> Uri ng pamilihan na may maraming kalahok ngunit may <em>produktong may bahagyang pagkakaiba</em>. Ang bawat kompanya ay may kakayahang magtakda ng presyo sa sariling produkto.</p>
+<ul style="margin-top:10px;">
+<li>Maraming prodyuser at mamimili</li>
+<li>Magkakaibang produkto (may brand, packaging, o kalidad)</li>
+<li>Malayang paglabas at pagpasok sa pamilihan</li>
+<li>Malakas ang kompetisyon sa advertising</li>
+</ul>
+<p><strong>Halimbawa:</strong> Mga fast-food chains tulad ng Jollibee, McDonald’s, Chowking.</p>
+</div>
+
+
+<div style="background:rgba(20,20,20,0.9); border:2px solid red; border-radius:15px; padding:20px; transition:0.4s; box-shadow:0 0 15px rgba(255,0,0,0.3);">
+<h3 style="color:#ff3333; text-align:center; font-size:1.5rem;">Oligopoly</h3>
+<img src="oligopoly.png" alt="Oligopoly" style="width:100%; border-radius:10px; margin:15px 0;">
+<p><strong>Kahulugan:</strong> Kalagayang may iilang malalaking kompanya na kumokontrol sa presyo at suplay. Ang mga desisyon ng isa ay maaaring makaapekto sa iba.</p>
+<ul style="margin-top:10px;">
+<li>Iilang naglalakihang kompanya</li>
+<li>Mataas ang hadlang sa pagpasok sa industriya</li>
+<li>Nagkakaroon ng sabwatan o price wars</li>
+<li>May pagkakapareho o bahagyang pagkakaiba sa produkto</li>
+</ul>
+<p><strong>Halimbawa:</strong> Globe, Smart, Petron, Shell.</p>
+</div>
+
+
+<div style="background:rgba(20,20,20,0.9); border:2px solid red; border-radius:15px; padding:20px; transition:0.4s; box-shadow:0 0 15px rgba(255,0,0,0.3);">
+<h3 style="color:#ff3333; text-align:center; font-size:1.5rem;">Monopoly</h3>
+<img src="monopoly.png" alt="Monopoly" style="width:100%; border-radius:10px; margin:15px 0;">
+<p><strong>Kahulugan:</strong> Kalagayan kung saan <em>iisang kompanya</em> lamang ang gumagawa o nagbebenta ng isang produkto o serbisyo at walang malapit na kapalit.</p>
+<ul style="margin-top:10px;">
+<li>Iisang prodyuser lamang</li>
+<li>Walang kakompetensiya</li>
+<li>Malakas ang kontrol sa presyo</li>
+<li>Mataas na hadlang sa pagpasok</li>
+</ul>
+<p><strong>Halimbawa:</strong> Meralco (kuryente), MWSS (tubig).</p>
+</div>
+</div>
+
+<h2 style="text-align:center; margin-top:60px; font-size:1.8rem; background:linear-gradient(90deg, red, darkred); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Paghahambing ng Apat na Estruktura</h2>
+
+<table style="width:100%; border-collapse:collapse; margin-top:25px; font-size:1rem; background:rgba(30,30,30,0.9); border:2px solid red;">
+<thead style="background:red; color:white;">
+<tr>
+<th style="padding:10px;">Katangian</th>
+<th style="padding:10px;">Ganap na Kompetisyon</th>
+<th style="padding:10px;">Monopolistic</th>
+<th style="padding:10px;">Oligopoly</th>
+<th style="padding:10px;">Monopoly</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:10px;">Bilang ng prodyuser</td><td>Marami</td><td>Marami</td><td>Iilan</td><td>Isa</td></tr>
+<tr><td style="padding:10px;">Uri ng produkto</td><td>Magkakatulad</td><td>Magkakaiba</td><td>Magkakatulad o bahagyang magkaiba</td><td>Walang kapalit</td></tr>
+<tr><td style="padding:10px;">Kontrol sa presyo</td><td>Wala</td><td>Bahagya</td><td>Malaki</td><td>Ganap</td></tr>
+<tr><td style="padding:10px;">Hadlang sa pagpasok</td><td>Wala</td><td>Mababa</td><td>Mataas</td><td>Napakataas</td></tr>
+<tr><td style="padding:10px;">Halimbawa</td><td>Palengke</td><td>Fast-food</td><td>Telecom, langis</td><td>Kuryente, tubig</td></tr>
+</tbody>
+</table>
+<div class="back-top"><a href="#top">Back to Top</a></div>
+</section>
+
+
+<section id="lesson6" style="font-family: Arial; color: #f3f3f3; background: url('SPIDERMANN.jpeg') no-repeat center center fixed; background-size: cover; position: relative; padding: 60px 20px; overflow-x:hidden;">
+
+<header style="text-align:center; margin-bottom:18px; box-shadow:0 0 25px crimson; background: linear-gradient(90deg, rgba(255,0,0,0.9), rgba(139,0,0,0.9)); padding:18px 12px; border-radius:12px;">
+<h1 style="margin:0; font-size:36px; color:#fff; text-shadow:3px 3px 10px black;">Lesson 6: Ugnayan ng Pamilihan at Pamahalaan</h1>
+<p style="margin:6px 0 0 0; color:gainsboro;">Komprehensibong talakay mula sa module — Price Ceiling, Price Floor, Price Support, Price Freeze, SRP, at papel ng pamahalaan</p>
+</header>
+
+<section style="background: rgba(139,0,0,0.85); padding:20px; border-radius:12px; box-shadow:0 0 20px rgba(255,0,0,0.6); margin-top:22px;">
+<h2 style="text-align:center; color:#ff4b4b; text-shadow:0 0 10px #ff0000; padding-bottom:6px;">Panimula</h2>
+<p style="text-align:justify; line-height:1.7; color:gainsboro;">
+Ang ugnayan ng <strong>pamilihan</strong> at <strong>pamahalaan</strong> ay mahalaga sa pagtiyak na ang presyo at suplay ng mga pangunahing bilihin ay makatarungan at abot-kaya. Sa pamamagitan ng mga patakaran tulad ng <em>price ceiling</em>,<em>price floor</em>, <em>price support</em>, <em>price freeze</em>, at <em>SRP</em> (Suggested Retail Price), pinoprotektahan ng pamahalaan ang kapakanan ng mga konsyumer at prodyuser, lalo na sa panahon ng krisis o kapag may market failure.
+</p>
+</section>
+
+<section style="margin-top:24px; background: rgba(0,0,0,0.55); padding:18px; border-radius:12px;">
+<h2 style="color:#ff4b4b; text-shadow:0 0 10px #ff0000; text-align:center;">Price Ceiling</h2>
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin:12px 0;">
+<figure style="margin:0; text-align:center;">
+<img src="PC.PNG" alt="Price Ceiling Graph 1" style="width:100%; max-width:520px; border-radius:8px; border:3px solid #ff4b4b; box-shadow:0 0 18px rgba(255,0,0,0.25);">
+<figcaption style="color:gainsboro; font-size:0.9rem; margin-top:6px;">Halimbawa ng Price Ceiling (mula sa module)</figcaption>
+</figure>
+<figure style="margin:0; text-align:center;">
+<img src="PC2.PNG" alt="Price Ceiling Graph 2" style="width:100%; max-width:520px; border-radius:8px; border:3px solid #ff4b4b; box-shadow:0 0 18px rgba(255,0,0,0.25);"><figcaption style="color:gainsboro; font-size:0.9rem; margin-top:6px;">Karagdagang ilustrasyon ng Price Ceiling</figcaption>
+</figure>
+</div>
+
+<div style="color:gainsboro; line-height:1.7;">
+<p><strong>Depinisyon:</strong> Ang <strong>price ceiling</strong> ay kilala rin bilang maximum price policy — ito ang pinakamataas na presyo na maaaring ipagbili ng prodyuser ng isang produkto. Karaniwang ipinatutupad ito sa mga pangunahing pangangailangan tulad ng bigas, asukal, kape, harina, tinapay, itlog, at iba pa. Ang <em>price ceiling</em> ay itinatakda na <strong>mas mababa</strong> sa equilibrium price para mapanatiling abot-kaya ang bilihin.</p>
+
+<p><strong>Paano at bakit ipinatutupad:</strong> Ipinatutupad ng pamahalaan ang price ceiling upang maprotektahan ang mga konsyumer, lalo na sa panahon ng emergency o kalamidad. Ang Department of Trade and Industry (DTI) at lokal na pamahalaan ang karaniwang nagsasagawa ng pagpapatupad at pagmamanman (tsek sa SRP at price freeze kapag kinakailangan).</p>
+
+<h4 style="color:#ff9b9b; margin-top:12px;">Mga Epekto ng Price Ceiling</h4>
+
+<table style="width:100%; border-collapse:collapse; margin-top:8px; background:rgba(255,255,255,0.03);">
+<thead>
+<tr style="background:rgba(255,0,0,0.6); color:white;">
+<th style="padding:8px; text-align:left;">Mabuti</th>
+<th style="padding:8px; text-align:left;">Di-mabuti</th>
+</tr>
+</thead>
+<tbody style="color:gainsboro;">
+<tr>
+<td style="padding:8px; vertical-align:top;">
+1. Mababang presyo ng mga bilihin.<br>
+2. Kasiguruhan para sa mga mamimili.
+</td>
+<td style="padding:8px; vertical-align:top;">
+1. Pagbaba ng supply (maaaring humina ang produksiyon).<br>
+2. Nagiging dahilan ng kakulangan (shortage).<br>
+3. Posibleng magtungo sa pagkakaroon ng mga ilegal na pamilihan (black market).
+</td>
+</tr>
+</tbody>
+</table>
+
+<p style="margin-top:10px;">Tandaan: Sa panahon ng kalamidad, maaaring ipatupad ang <em>price freeze</em> (pagbabawal sa pagtaas ng presyo) at mahigpit na binabantayan ng DTI ang SRP at iba pang regulasyon upang maiwasan ang pananamantala ng negosyante.</p>
+</div>
+</section>
+
+<section style="margin-top:24px; background: rgba(139,0,0,0.85); padding:18px; border-radius:12px; box-shadow:0 0 20px rgba(255,0,0,0.35);">
+<h2 style="color:#fff; text-align:center; text-shadow:0 0 10px #ff0000;">Price Floor (Price Support / Minimum Price)</h2>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin:12px 0;">
+<figure style="margin:0; text-align:center;">
+<img src="PF.PNG" alt="Price Floor Graph 1" style="width:100%; max-width:520px; border-radius:8px; border:3px solid #ff4b4b; box-shadow:0 0 18px rgba(255,0,0,0.25);">
+<figcaption style="color:gainsboro; font-size:0.9rem; margin-top:6px;">Halimbawa ng Price Floor (mula sa module)</figcaption>
+</figure>
+<figure style="margin:0; text-align:center;">
+<img src="PF2.PNG" alt="Price Floor Graph 2" style="width:100%; max-width:520px; border-radius:8px; border:3px solid #ff4b4b; box-shadow:0 0 18px rgba(255,0,0,0.25);">
+<figcaption style="color:gainsboro; font-size:0.9rem; margin-top:6px;">Price Floor — halimbawa ng labor surplus</figcaption>
+</figure>
+</div>
+
+<div style="color:gainsboro; line-height:1.7;">
+<p><strong>Depinisyon:</strong> Ang <strong>price floor</strong> (o price support / minimum price) ay ang pinakamababang presyo na itinakda ng batas para sa ilang produkto o serbisyo. Ito ay karaniwang itinakda ng pamahalaan upang makatulong sa mga prodyuser (hal., magsasaka) at manggagawa (minimum wage), lalong-lalo na kapag ang equilibrium price ay masyadong mababa at nagbabantang magdulot ng pag-untog sa produksiyon.</p>
+<h4 style="color:#ffd4d4; margin-top:12px;">Mga Epekto ng Price Floor</h4>
+<table style="width:100%; border-collapse:collapse; margin-top:8px; background:rgba(255,255,255,0.03);">
+<thead>
+<tr style="background:rgba(0,0,0,0.4); color:#fff;">
+<th style="padding:8px; text-align:left;">Mabuti</th>
+<th style="padding:8px; text-align:left;">Di-mabuti</th>
+</tr>
+</thead>
+<tbody style="color:gainsboro;">
+<tr>
+<td style="padding:8px; vertical-align:top;">1. Mas mataas na sahod para sa manggagawa (hal., minimum wage).<br>2. Mas malaking tubo para sa ilang prodyuser.</td>
+<td style="padding:8px; vertical-align:top;">1. Mas mataas na presyo ng bilihin para sa konsyumer.<br>2. Maaring magdulot ng kalabisan (surplus) ng kalakal.<br>3. Maaaring bumaba ang demand dahil sa mas mataas na presyo.</td>
+</tr>
+</tbody>
+</table>
+<p style="margin-top:10px;">Halimbawa ng price support ay subsidy sa agrikultura, minimum wage, tax exemptions o iba pang tulong na pinansyal upang panatilihing sustainable ang produksiyon.</p>
+</div>
+</section>
+<section style="margin-top:24px; background: rgba(0,0,0,0.6); padding:18px; border-radius:12px;">
+<h2 style="text-align:center; color:#ff4b4b; text-shadow:0 0 10px #ff0000;">Buod at Paghahambing</h2>
+<figure style="text-align:center; margin:8px 0 18px 0;">
+<img src="BUOD.PNG" alt="Buod Diagram" style="width:100%; max-width:760px; border-radius:8px; border:3px solid #ff4b4b; box-shadow:0 0 20px rgba(255,0,0,0.25);">
+<figcaption style="color:gainsboro; margin-top:8px;">Buod ng ugnayan ng pamilihan at pamahalaan (mula sa module)</figcaption>
+</figure>
+<div style="line-height:1.7; color:gainsboro;">
+<p><strong>Pagkakatulad ng Price Ceiling at Price Floor:</strong> Parehong regulasyon mula sa pamahalaan at layuning itaguyod ang kapakanan ng mga mamamayan — bagaman magkaiba ang focus (ceiling para proteksyon ng konsyumer; floor para proteksyon ng prodyuser/manggagawa).</p>
+<table style="width:100%; border-collapse:collapse; margin-top:12px; background:rgba(255,255,255,0.03);">
+<thead>
+<tr style="background:crimson; color:white;">
+<th style="padding:10px; text-align:left;">Konsepto</th>
+<th style="padding:10px; text-align:left;">Kahulugan</th>
+<th style="padding:10px; text-align:left;">Mabuti</th>
+<th style="padding:10px; text-align:left;">Di-mabuti</th>
+</tr>
+</thead>
+<tbody style="color:gainsboro;">
+<tr>
+<td style="padding:10px; vertical-align:top;">Price Ceiling</td>
+<td style="padding:10px; vertical-align:top;">Pinakamataas na presyo; nakatakda mas mababa sa equilibrium price.</td>
+<td style="padding:10px; vertical-align:top;">Mababang presyo; kasiguruhan sa konsyumer.</td>
+<td style="padding:10px; vertical-align:top;">Kakulangan, pagbaba ng supply, black market.</td>
+</tr>
+<tr>
+<td style="padding:10px; vertical-align:top;">Price Floor</td>
+<td style="padding:10px; vertical-align:top;">Pinakamababang presyo; nakatakda mas mataas sa equilibrium price.</td>
+<td style="padding:10px; vertical-align:top;">Mas mataas na kita/sahod para sa prodyuser/manggagawa.</td>
+<td style="padding:10px; vertical-align:top;">Kalabisan ng produkto, mas mataas na presyo para sa konsyumer.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section style="margin-top:24px; background: rgba(139,0,0,0.9); padding:18px; border-radius:12px; box-shadow:0 0 22px rgba(255,0,0,0.45);">
+<h2 style="text-align:center; color:#fff; text-shadow:0 0 10px #ff0000;">Papel ng Pamahalaan sa Pamilihan</h2>
+<div style="line-height:1.7; color:gainsboro;">
+<p><strong>Ahensiya at mekanismo:</strong> Ang Department of Trade and Industry (DTI) ang pangunahing ahensiya na nagpapatupad ng price regulations tulad ng SRP, price ceiling, at price freeze. Nakikipagtulungan ito sa lokal na pamahalaan (barangay, lungsod) para i-monitor ang galaw ng presyo.</p>
+<p><strong>Mga instrumento:</strong> SRP (Suggested Retail Price), price freeze (pansamantalang pagbabawal sa pagtaas ng presyo sa mga apektadong lugar), price support (subsidy, tax exemptions), at penalties sa mga lalabag (multa at posibleng pagkakakulong ayon sa mga umiiral na batas).</p>
+<p><strong>Halimbawa sa modyul:</strong> Kapag may sakuna (e.g., bagyo) at itinatakda ng DTI ang 60-day price freeze sa mga nasa state of calamity, hindi maaaring magtaas ng presyo ng mga pangunahing agricultural at non-agricultural necessities. Ang mga lalabag ay maaaring pagmultahin mula Php5,000 hanggang Php1,000,000 at/o pagkakakulong ng isa hanggang sampung taon (ayon sa modyul na pinagmulan).</p>
+<p><strong>Layunin ng pamahalaan:</strong> (mula sa modyul) — 1) panatilihin ang abot-kayang presyo para sa mamamayan; 2) protektahan ang mga prodyuser kapag ang presyo ng produkto ay napakababa; 3) panagutin ang mga mapanmanipulasyon na negosyante sa panahon ng emergency.</p>
+</div>
+</section>
+<section style="margin-top:24px; background:rgba(0,0,0,0.6); padding:18px; border-radius:12px;">
+<h2 style="text-align:center; color:#ff4b4b; text-shadow:0 0 10px #ff0000;">Buod ng Aralin sa Flashcards</h2>
+<div class="flashcard-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:20px;">
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Ano ang Ugnayan ng Pamilihan at Pamahalaan?</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Ito ay ang pakikialam ng pamahalaan sa pamilihan upang mapanatili ang patas, abot-kaya, at balanseng presyo para sa konsyumer at prodyuser.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Ano ang Price Ceiling?</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Pinakamataas na presyo na itinakda ng pamahalaan upang maprotektahan ang konsyumer laban sa sobrang taas na presyo ng produkto o serbisyo.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Epekto ng Price Ceiling</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Nagiging abot-kaya ang presyo para sa mamimili ngunit maaaring magdulot ng kakulangan (shortage) at black market kapag masyadong mababa ang presyo.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Ano ang Price Floor?</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Pinakamababang presyo na itinakda ng pamahalaan upang maprotektahan ang prodyuser o manggagawa, gaya ng minimum wage o presyo ng palay.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Epekto ng Price Floor</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Nagbibigay proteksyon sa manggagawa at prodyuser, ngunit maaaring magdulot ng kalabisan ng produkto o pagbaba ng demand kapag sobrang taas ang presyo.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Ano ang Price Freeze?</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Pansamantalang pagbabawal sa pagtaas ng presyo sa mga lugar na nasa ilalim ng state of calamity upang mapanatiling abot-kaya ang mga pangunahing bilihin.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Ano ang SRP?</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Ang Suggested Retail Price ay gabay sa tamang presyo ng produkto upang maiwasan ang pananamantala ng mga negosyante.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Papel ng Pamahalaan</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">Ang pamahalaan, sa pamamagitan ng DTI at iba pang ahensya, ay nagmomonitor, nagtatakda, at nagpapatupad ng mga regulasyong nagpoprotekta sa konsyumer at prodyuser.</div>
+</div>
+</div>
+
+<div class="flashcard" style="width:230px; height:160px; perspective:1000px;">
+<div class="flashcard-inner" style="position:relative; width:100%; height:100%; transition:transform 0.8s; transform-style:preserve-3d;">
+<div class="flashcard-front" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#990000; color:#fff; font-weight:bold; box-shadow:0 0 15px rgba(255,0,0,0.7);">Layunin ng Pamahalaan</div>
+<div class="flashcard-back" style="position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:12px; display:flex; align-items:center; justify-content:center; text-align:center; padding:15px; background:#222; color:#fff; transform:rotateY(180deg); box-shadow:0 0 15px rgba(255,0,0,0.7);">1️ Panatilihin ang abot-kayang presyo para sa lahat. <br>2 Protektahan ang mga prodyuser laban sa mababang presyo. <br>3️ Pigilin ang pananamantala ng mga negosyante sa panahon ng krisis.</div>
+</div>
+</div>
+
+</div>
+<div style="text-align:center; margin-top:18px;">
+<a href="#top" style="display:inline-block; background:rgba(255,0,0,0.2); color:#ff3333; padding:10px 20px; border-radius:30px; border:2px solid #ff3333; text-decoration:none; box-shadow:0 0 12px rgba(255,0,0,0.35);">Back to Top</a>
+</div>
+</section>
+
+
+
+<footer style="text-align:center; margin-top:16px; color:gainsboro; font-size:0.9rem;">
+<p style="margin:6px 0;">FYI PO :)) Source: DepEd Module — <em>Ugnayan ng Pamilihan at Pamahalaan</em></p>
+</footer>
+
+</div>
+</section>
+
+<footer>
+<p>© 2025 2ND QTR AP | Designed by Sefie Labador</p>
+</footer>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<title>Lesson 4 — CSS Rules, Classes, and Grouping Selectors</title>
+<style type="text/css">
+:root{--accent:#ff4b4b;--accent2:#ff8b8b;--bg:#0b0202;--card:#1a0202;--text:#f3eaea;}
+
+body{background:radial-gradient(circle at top left,rgba(60,0,0,0.6),rgba(0,0,0,0.85)),url('download.jpeg') center/cover fixed no-repeat;color:var(--text);font-family:'Poppins',sans-serif;line-height:1.7;}
+
+header{text-align:center;padding:40px 16px;background:rgba(0,0,0,0.5);border-bottom:1px solid rgba(255,80,80,0.1);}
+header h1{font-family:'Montserrat',sans-serif;font-size:40px;background:linear-gradient(90deg,var(--accent),#8b0000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 15px rgba(255,0,0,0.4);}
+header p{color:#ffdede;margin-top:10px;font-weight:500;}
+
+main{max-width:1000px;margin:40px auto;background:rgba(20,2,2,0.55);padding:30px;border-radius:18px;border:1px solid rgba(255,60,60,0.1);box-shadow:0 0 40px rgba(255,0,0,0.25);}
+
+h2{color:var(--accent2);margin:24px 0 10px;}
+
+h3{color:var(--accent);margin:16px 0 8px;}
+
+ul,ol{margin-left:22px;margin-bottom:14px;}
+
+pre{background:rgba(255,255,255,0.05);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);
+
+color:#ffeaea;overflow:auto;font-size:0.95rem;}
+
+.code-inline{background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:6px;font-family:monospace;}
+
+.table{width:100%;border-collapse:collapse;margin:12px 0;background:rgba(255,255,255,0.03);}
+.table th,.table td{border:1px solid rgba(255,80,80,0.15);padding:10px;vertical-align:top;}
+.table th{background:rgba(255,0,0,0.25);color:white;}
+.table td{color:#ffeaea;}
+
+footer{text-align:center;margin:40px 0;color:#ffbdbd;}
+</style>
+</head>
+<body>
+<header>
+<h1>Lesson 4 — CSS Rules, Classes, and Grouping Selectors</h1>
+<p>Structure of CSS rules, six main property groups, classes, and grouping techniques</p>
+</header>
+<main>
+<h2>CSS Rules and Structure</h2>
+<p>A <strong>CSS rule</strong> defines how specific HTML elements should appear. Each rule has two parts: a <em>selector</em> that identifies which elements to style, and a <em>declaration block</em> containing one or more style declarations inside braces <span class="code-inline">{ }</span>.</p>
+<pre>
+p {
+  color: red;
+  font-size: 18px;
+}
+</pre>
+<p>The selector <span class="code-inline">p</span> targets all paragraph elements. Each declaration includes a <strong>property</strong> (like <span class="code-inline">color</span>) and a <strong>value</strong> (like <span class="code-inline">red</span>), separated by a colon and ending with a semicolon.</p>
+<h2>Six Main Groups of CSS Properties</h2>
+<table class="table">
+<thead><tr><th>Group</th><th>Description</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Fonts</td><td>Define font family, size, weight, and style for text.</td><td><pre>p { font-family: Arial; font-size:16px; }</pre></td></tr>
+<tr><td>Colors & Backgrounds</td><td>Control element colors and background styles.</td><td><pre>body { background-color:black; color:white; }</pre></td></tr>
+<tr><td>Text</td><td>Adjust alignment, spacing, and decoration of text.</td><td><pre>h1 { text-align:center; text-transform:uppercase; }</pre></td></tr>
+<tr><td>Boxes & Layout</td><td>Handle spacing, borders, padding, and element positioning.</td><td><pre>div { margin:20px; padding:15px; border:2px solid red; }</pre></td></tr>
+<tr><td>Lists</td><td>Modify bullets, numbering, and indentation.</td><td><pre>ul { list-style-type:square; }</pre></td></tr>
+<tr><td>Tag Classification</td><td>Define how an element behaves in layout flow.</td><td><pre>img { display:block; }</pre></td></tr>
+</tbody>
+</table>
+<h2>Using Classes in CSS</h2>
+<p><strong>Classes</strong> let designers reuse style rules on different elements. A class starts with a period (<span class="code-inline">.</span>) in CSS and is applied in HTML using the <span class="code-inline">class</span> attribute.</p>
+<pre>
+.golden { color: blue; }
+.sodapop { color: red; }
+</pre>
+<pre>
+<p class="golden">This paragraph text is blue.</p>
+<div class="sodapop">This div text is red.</div>
+</pre>
+<p>You can combine multiple classes for layered effects:</p>
+<pre>
+.highlight { background-color: yellow; color: black; }
+.big-text { font-size: 24px; font-weight: bold; }
+<p class="highlight big-text">This text is both highlighted and large.</p>
+</pre>
+<h2>Element + Class Selectors</h2>
+<p>The <strong>element + class selector</strong> (<span class="code-inline">element.classname</span>) is more specific than a simple class. It targets only the chosen element type using that class.</p>
+<pre>
+.note { background-color: yellow; }
+p.note { color: blue; }
+</pre>
+<pre>
+<p class="note">This paragraph has blue text on yellow background.</p>
+<li class="note">This list item only inherits the yellow background.</li>
+</pre>
+<h2>Grouping Selectors</h2>
+<p><strong>Grouping selectors</strong> let you apply the same rules to multiple selectors at once, separated by commas. This reduces repetition and keeps code shorter.</p>
+<pre>
+h1, p {
+  color: white;
+  background-color: black;
+}
+</pre>
+<p>The same color and background style now apply to both headings and paragraphs. Grouping improves consistency and reduces file size.</p>
+<h2>Summary</h2>
+<ul>
+<li>Every CSS rule follows the pattern <span class="code-inline">selector { property: value; }</span>.</li>
+<li>Six groups of properties organize all styling options.</li>
+<li>Classes are reusable style labels applied with the <span class="code-inline">class</span> attribute.</li>
+<li>Element + Class selectors refine styles to a specific tag.</li>
+<li>Grouping selectors keep code concise and consistent.</li>
+</ul>
+</main>
+<footer>
+<p>© Lesson 4 — CSS Rules, Classes and Grouping Selectors | By Labador</p>
+</footer>
+</body>
+</html>

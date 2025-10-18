@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Sefie Labador</title>
+
+<style type="text/css">
+/*body*/
+body {font-family: Alatsi;color: white;height:100vh;overflow-x:hidden;overflow-y:auto;background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("htmlbg.jpeg") no-repeat center center fixed;background-size: cover;}
+
+/*header*/
+header {background: rgba(1, 1, 1, 0.5);padding: 20px;text-align: center;}
+header h1 {font-family:Montserrat;font-size: 65px;font-weight: 900;background: linear-gradient(to right, #ff1e1e, #8b0000);letter-spacing: 2px;margin: 0;}
+header p {font-family: Montserrat;font-size: 28px;font-weight: 700;}
+
+/*navigation*/
+nav {background: darkred;padding:10px;text-align: center;font-family: Arial;font-size: 20px;letter-spacing:1px;}
+nav a {color: rgba(255, 255, 255, 0.6);margin: 0 75px;}
+nav a:hover {color: white;text-shadow: 0 0 10px rgba(255,255,255,0.8);}
+
+/*film*/
+.film-container {justify-content: center;margin-top: 20px;}
+.film-container iframe {width: 100%;max-width: 600px;height: 340px;border: 3px solid crimson;border-radius: 10px;}
+footer {background: darkred;color: white;text-align: center;padding: 10px;margin-top: 20px;}
+
+/*about me*/
+.about-container{background: rgba(139,0,0,0.85);display: flex;align-items:center;justify-content:center;gap: 40px;max-width:1100px;margin: 20px auto;padding: 40px;border-radius: 15px;box-shadow: 0 0 25px rgba(255,255,255,0.6),0 0 50px rgba(220,20,60,0.8),0 0 80px rgba(139,0,0,0.9);transition: transform 0.3s, box-shadow 0.3s;}
+
+.about-container:hover {transform: translateY(-10px);box-shadow: 0 0 35px rgba(255,255,255,0.9),0 0 70px rgba(220,20,60,0.95),0 0 100px rgba(139,0,0,1);}
+
+.about-container img {width: 350px;height: auto;border-radius: 15px;border: 4px solid #fff;box-shadow: 0 0 20px rgba(255,255,255,0.8),0 0 40px rgba(220,20,60,0.9);transition: transform 0.3s, box-shadow 0.3s;}
+
+.about-container img:hover {transform: scale(1.05);box-shadow: 0 0 25px rgba(255,255,255,1),0 0 50px rgba(220,20,60,1),0 0 80px rgba(139,0,0,1);}
+
+.about-container p {flex: 1;font-size: 1.3rem;line-height: 1.8;color: #f5f5f5;font-family: Cinzel, serif;font-weight: bold;padding: 20px;background: rgba(0,0,0,0.3);border-radius: 12px;text-shadow: 0 0 8px rgba(255,255,255,0.4);box-shadow: inset 0 0 15px rgba(255,255,255,0.2);}
+
+#about h2 {font-size: 65px;font-family: 'Montserrat', sans-serif;font-weight: 900;margin-bottom: 40px;text-align: center;letter-spacing: 2px;background: linear-gradient(to right, #ffffff, #ff4d4d, #8b0000);-webkit-background-clip: text;-webkit-text-fill-color: transparent;text-shadow:0 0 20px rgba(255,255,255,0.8),0 0 40px rgba(220,20,60,0.9),0 0 60px rgba(139,0,0,1);position: relative;display: inline-block;padding: 15px 30px;}
+
+#about h2::before {position: absolute;top: 0; left: 0; right: 0; bottom: 0;}
+
+/*TLE CARDS ONLY*/
+.TLE-cards div {background: #0d0d0d;border-radius: 15px;padding: 15px;text-align: center;box-shadow: 0 0 15px rgba(255,255,255,0.5);transition: all 0.3s ease;}
+.TLE-cards div:hover {transform: scale(1.05);box-shadow: 0 0 30px rgba(255,255,255,1);}
+
+/*AP PORTAL*/
+.portal-btn {text-decoration: none;display: inline-block;padding: 18px 40px;font-size: 22px;font-family: 'Montserrat', sans-serif;font-weight: 900;letter-spacing: 1.5px;color: white;border: 3px solid #ff4d4d;border-radius: 50px;background: linear-gradient(135deg, #ff1e1e, #8b0000);box-shadow: 0 0 25px rgba(255,0,0,0.8),inset 0 0 15px rgba(255,255,255,0.2);transition: all 0.3s ease-in-out;}
+.portal-btn:hover {transform: scale(1.08);box-shadow: 0 0 40px rgba(255,50,50,1),inset 0 0 15px rgba(255,255,255,0.4);}
+
+/*filmm*/
+.video-frame {position: relative;display: inline-block;border-radius: 20px;overflow: hidden;box-shadow: 0 0 25px rgba(0,150,255,0.8);transition: transform 0.4s, box-shadow 0.4s;}
+.video-frame:hover {transform: scale(1.05);box-shadow: 0 0 45px rgba(0,200,255,1);}
+
+/*reflection*/
+.reflection {max-width: 800px;margin: 60px auto;padding: 40px;background: radial-gradient(#2b0000, #000);border: 2px solid #ff4b4b;border-radius: 25px;box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);font-family: Poppins;color: white;text-align: center;position: relative;overflow: hidden;}
+
+.reflection::before {content: "";position: absolute;top: -50%;left: -50%;width: 200%;height: 200%;background: radial-gradient(circle, rgba(255,0,0,0.15) 0%, transparent 70%);animation: pulse 6s infinite alternate;z-index: 0;}
+
+.reflection-content { position: relative;z-index: 1;}
+
+.reflection h2 {font-size: 2em;color: #ff6666;text-shadow: 0 0 15px #ff0000;margin-bottom: 20px; letter-spacing: 1px;}
+
+.reflection p {font-size: 1.1em;line-height: 1.8;color: #f2f2f2;text-shadow: 0 0 8px rgba(255, 0, 0, 0.4);margin: 0 auto;max-width: 90%;}
+
+.reflection hr {border: none;height: 2px;background: linear-gradient(90deg, transparent, #ff0000, transparent);margin: 25px auto;width: 70%;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Welcome, I'm Sefie</h1>
+<p style="font-size:27px;font-family:Courier New;color:Gainsboro;">Josephine Grace P. Labador from 9-FIDELITY</p>
+</header>
+
+<nav>
+<a href="#about"><b>ABOUT ME 👤</b></a>
+<a href="#TLE"><b>TLE-ICT CONTENTS 💻</b></a>
+<a href="#AP"><b>ARALING PANLIPUNAN 🌍</b></a>
+<a href="#film"><b>MY FILM 🎬</b></a>
+</nav>
+
+<!--me-->
+<section id="about">
+<h2>About Me</h2>
+
+<div class="about-container">
+<img src="htmlpfp.PNG" alt="My Photo">
+<p>I am Josephine Grace P. Labador, often called <b>“Sefie”</b>— derived from JoSEPHIne. My parents believed that changing PH with F would sound fancier. I was born on March 7, 2011 so I’m now 14 years old. I wouldn’t say I have just one set of hobbies well I consider myself a jack of all trades, a master of none. While I’m drawn most strongly to anything artistic, I find inspiration in all kinds of creative expression. After all, isn’t everything a form of art in its own way? In short, I’m passionate about exploring, creating, and appreciating a little bit of everything.</p>  </div>
+
+<div style="display:flex; gap:40px; justify-content:center; flex-wrap:wrap; margin-top:40px;">
+<div class="about-container" style="flex:1; min-width:300px;">
+<img src="friends.jpg" alt="Friends Photo">
+<p>One fact about me is I don’t really have a favorite place. I don’t care where I am—what matters is who I’m with. Honestly, my biggest blessing is my friends and the people around me. Toxic relationships? Nope, not in my dictionary. I always try to show love and care, and they do the same for me (which is super awesome). I love them so much it feels like my heart could explode sometimes. Because of them, I barely feel sad—maybe just once in a blue moon. Most of the time, I’m just happy. Sure, we all make mistakes and sometimes things get messy, but they’re always there for me, and I’m so thankful. Sometimes I cry when I think about the hard times we went through together and how we never left each other. And now I’m literally tearing up again because I love them so much.</p>
+</div>
+
+<div class="about-container" style="flex:1; min-width:300px;">
+<img src="family.jpg" alt="Family Photo">
+<p>I could pen a thousand words yet still fall short of what’s inside in writing about how much I love my family. “You do not choose your family, GOD chooses them for you.” I’ve heard from my parents. That quote hit me and made me thank God sooo much for giving me this wonderful family. I am so blessed that I consider my family perfect, in all life aspects. I could describe my family but it will be too much. All I can say is that much like a tree, the Foundation of my being is deeply rooted in the lessons and experiences that is nourished by the people I mostly Trust and Love. Hence, the knowledge and actions I exercise in my life is mostly influenced by them.</p>
+</div>
+ </div>
+</section>
+<hr style="border:none;height:8px;margin:70px auto;width:85%;background:linear-gradient(to right,transparent,crimson,darkred,crimson,transparent);border-radius:10px;box-shadow:0 0 20px rgba(139,0,0,0.8);">
+
+<!--tle-->
+<section id="TLE" style="padding:50px 20px; text-align:center; background:linear-gradient(135deg, rgba(139,0,0,0.95), rgba(90,0,0,0.95)); border-radius:10px;">
+<h2 style="font-size:42px; font-family:'Montserrat',sans-serif; font-weight:900; color:white; text-shadow:0 0 15px rgba(255,255,255,0.9);">
+TLE-ICT CONTENTS 💻</h2>
+
+<div class="TLE-cards" style="display:flex; justify-content:center; flex-wrap:wrap; gap:35px; margin-top:30px;">
+
+<!--card 1-->
+<a href="l1.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Lesson 1</h3>
+</div></a>
+
+<!--card 2-->
+<a href="l2.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Lesson 2</h3>
+</div></a>
+
+<!--card3 -->
+<a href="l3.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Lesson 3</h3>
+</div></a>
+
+<!--card4 -->
+<a href="l4.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Lesson 4</h3>
+</div></a>
+
+<!--card5 -->
+<a href="l5.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Lesson 5</h3>
+</div></a>
+
+<!--card6 -->
+<a href="l6.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Lesson 6</h3>
+</div></a>
+
+<!--card7 -->
+<a href="reflectionz.html" style="text-decoration:none; color:white;">
+<div style="background:#0d0d0d; border-radius:15px; padding:15px; text-align:center; box-shadow:0 0 15px rgba(255,255,255,0.5); width:380px; transition:all 0.3s ease;">
+<img src="lesson1and2.jpg" alt="HTML & CSS" style="width:100%; height:220px; object-fit:cover; border-radius:12px;">
+<h3 style="margin-top:15px;">Reflections :))</h3>
+</div></a>
+ </div>
+</section>
+
+<!--AP-->
+<section id="AP" style="padding:60px 20px; text-align:center; background:linear-gradient(135deg, rgba(50,0,0,0.9), rgba(139,0,0,0.95)); border-radius:15px; box-shadow:0 6px 25px rgba(0,0,0,0.7); margin:70px auto; width:90%; max-width:1200px;">
+ <h2 style="font-size:48px;font-family:'Montserrat',sans-serif;font-weight:900;letter-spacing:2px;margin-bottom:30px;background:linear-gradient(to right,#ffcc70,#ff8177,#cf556c,#b12a5b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:2px 2px 10px rgba(0,0,0,0.7);">🌍 ARALING PANLIPUNAN</h2>
+<a href="APsite.html" class="portal-btn">🚪 ENTER THE AP PORTAL</a>
+</section>
+
+<!--film-->
+<section id="film" style="padding:70px 20px;text-align:center;background:linear-gradient(135deg,rgba(0,0,0,0.9),rgba(90,0,0,0.95));border-radius:15px;box-shadow:0 6px 25px rgba(0,0,0,0.7);margin:70px auto;width:90%;max-width:1200px;">
+<h2 style="font-size:48px;font-family:'Montserrat',sans-serif;font-weight:900;letter-spacing:2px;margin-bottom:30px;background:linear-gradient(to right,#00c6ff,#0072ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:2px 2px 10px rgba(0,0,0,0.7);">
+🎥 SCHOOL EVENTS FILM
+</h2>
+<p style="color:#f0e9e9;font-size:20px;font-family:'Cinzel',serif;margin-bottom:40px;">
+School events of 2nd qtr | My documentation :)
+</p>
+
+<div class="video-frame" style="display:flex;justify-content:center;">
+<video width="100%" height="500" controls style="border:none;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.6);max-width:900px;">
+<source src="564453779_24748965854806377_2164461712925019894_n.mp4" type="video/mp4"> LPSci
+</video>
+</div>
+
+<p style="margin-top:25px;font-size:18px;color:#ddd;font-style:italic;">
+🎬 My very own film capturing the spirit of our school events!
+</p>
+</section>
+
+<section class="reflection">
+<div class="reflection-content">
+<h2>🔥 Reflection</h2>
+<hr>
+<p><span style="color:#ff2d2d;font-weight:900;font-family:'Montserrat',sans-serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5);letter-spacing:1px;">
+Buwan ng Wika:
+</span><br>
+The most important thing I’ve learned from the event is to love and cherish our culture and never forget how important and special it is. I can apply this by speaking our Filipino language proudly and showing respect for our traditions. I’ve actively participated in this event by showing respect to our country and heroes, like honoring the flag and being kind to everyone. I also joined some Filipino performances that were part of Buwan ng Wika. If I were to teach this topic to a classmate, I’d say that Buwan ng Wika helps us remember who we are as Filipinos and teaches us to be proud of our language. It’s important to have this event because it reminds us to love our country and keep our culture alive.
+</p>
+<p><span style="color:#ff2d2d;font-weight:900;font-family:'Montserrat',sans-serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5);letter-spacing:1px;">
+Intrams:
+</span><br>
+The most important thing I’ve learned from Intrams is teamwork and cooperation. I can apply this in real-life situations through helping my friends, classmates, and family when we work together or play games. I actively participated in the event through joining games, cheering for my team, and showing good sportsmanship. If I were to teach this topic to my classmates, I’d tell them that Intrams is not just about winning, but about playing fair and supporting each other. It’s important to have this event because it teaches us unity, friendship, and how to enjoy sports while respecting everyone.
+</p>
+<p><span style="color:#ff2d2d;font-weight:900;font-family:'Montserrat',sans-serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5);letter-spacing:1px;">
+Science month:
+</span><br>
+The most important thing I’ve learned from Science Month is that science helps us understand how things work and how to take care of our health and our planet. I can apply this in real life by keeping myself clean, saving water, and helping others learn about good habits. I participated in the event by making posters, helping with our wins corner, and joining other activities like the toothbrushing and proper hygiene events. If I were to teach this topic to my classmates, I’d say that science is fun and useful because it teaches us to explore and take care of everything around us. It’s important to have this event because it reminds us that science is a big part of our everyday life and it makes learning more exciting.</p>
+
+<p><span style="color:#ff2d2d;font-weight:900;font-family:'Montserrat',sans-serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5);letter-spacing:1px;">
+AP month:
+</span><br>
+The most important thing I’ve learned from AP Month is that learning about history and different countries helps us understand people and cultures better.
+I can apply this in real life by respecting others and learning more about what makes every country special. 
+Our AP Month hasn’t really started yet, but I can already say that it’s going to be fun, especially the upcoming United Nations event because it will help us learn about other nations and how we can all work together. 
+If I were to teach this topic to my classmates, I’d say that AP Month is about learning from the past and appreciating every culture. 
+It’s important to have this event because it teaches us to value history, respect differences, and be proud of our identity.</p>
+
+<p><span style="color:#ff2d2d;font-weight:900;font-family:'Montserrat',sans-serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5);letter-spacing:1px;">
+Teachers day:
+</span><br>
+The most important thing I’ve learned from Teachers’ Day is to always appreciate and thank our teachers for all the things they do for us. I can apply this in real life by being respectful, listening to my teachers, and always doing my best in school. I participated in the event by joining my classmates in giving small tokens of appreciation to our teachers and bonding with them through fun activities. If I were to teach this topic to my classmates, I’d say that Teachers’ Day is a special time to make our teachers feel loved and valued. It’s important to have this event because it reminds us that our teachers work hard to help us learn and grow every day.</p>
+
+<p><span style="color:#ff2d2d;font-weight:900;font-family:'Montserrat',sans-serif;text-shadow:1px 1px 4px rgba(0,0,0,0.5);letter-spacing:1px;">
+Cluster meet:
+</span><br>
+The most important thing I’ve learned from the Cluster Meet is that teamwork and sportsmanship are really important, not just in games but also in real life. I can apply this by always supporting others and being a good sport, even if I’m not the one playing. Even though I wasn’t a player, I enjoyed watching every team’s cooperation and cheering for them. I also made new friends from other schools, which made the event even more fun. If I were to teach this topic to my classmates, I’d say that Cluster Meet isn’t just about winning but about learning to work together and make new friends. It’s important to have this event because it builds unity, friendship, and school pride.</p>
+
+</section>
+<footer>
+  <p>© 2025 Las Pinas City National Science High School</p>
+</footer>
+
+</body>
+</html>

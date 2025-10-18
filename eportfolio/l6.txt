@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<title>Lesson 6 — CSS Dimensions and Pseudo-Classes</title>
+<style>
+:root{--bg-dark:#0a0101;--card-dark:#1a0505;--accent:#ff4b4b;--light:#ffcccc;}
+body{margin:0;font-family:'Poppins',sans-serif;background:radial-gradient(circle at top left,rgba(60,0,0,0.6),rgba(0,0,0,0.9)),url('download.jpeg')center/cover fixed no-repeat;color:var(--light);line-height:1.6;}
+header{text-align:center;padding:60px 20px 40px;background:linear-gradient(90deg,rgba(139,0,0,0.9),rgba(255,0,0,0.4));border-bottom:3px solid var(--accent);box-shadow:0 0 25px rgba(255,0,0,0.4);}
+header h1{font-family:'Montserrat',sans-serif;font-size:48px;margin:0;background:linear-gradient(90deg,#ff4b4b,#ff0000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 15px rgba(255,0,0,0.3);}
+header p{font-size:18px;color:#ffdada;}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;padding:20px;background:rgba(0,0,0,0.6);}
+nav a{color:#fff;text-decoration:none;background:rgba(255,0,0,0.15);border:1px solid rgba(255,60,60,0.4);padding:10px 18px;border-radius:999px;transition:.3s;}
+nav a:hover{background:#ff4b4b;color:#fff;box-shadow:0 0 15px rgba(255,0,0,0.5);}
+main{max-width:1100px;margin:50px auto;padding:0 20px;}
+.card{background:linear-gradient(180deg,rgba(20,2,2,0.7),rgba(8,0,0,0.9));border-radius:16px;border:1px solid rgba(255,60,60,0.2);box-shadow:0 0 35px rgba(255,0,0,0.2);padding:30px;margin-bottom:40px;}
+.card h2{color:var(--accent);font-size:28px;margin-top:0;text-shadow:0 0 12px rgba(255,0,0,0.4);}
+.card h3{color:#ff8b8b;}
+pre{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);padding:14px;border-radius:10px;overflow-x:auto;color:#ffeaea;}
+ul,ol{margin-left:20px;}
+footer{text-align:center;padding:25px;background:rgba(0,0,0,0.85);color:#ffbaba;border-top:2px solid var(--accent);font-size:14px;}
+</style>
+</head>
+<body>
+<header><h1>Lesson 6 — CSS Dimensions and Pseudo-Classes</h1><p>Understanding element size, visibility, and interactive link states in CSS</p></header>
+<nav><a href="#dimensions">Dimensions</a><a href="#visibility">Visibility</a><a href="#pseudo">Pseudo-Classes</a><a href="#examples">Examples</a><a href="#summary">Summary</a></nav>
+<main>
+<section id="dimensions" class="card"><h2>CSS Dimensions</h2><p>The <strong>dimensions</strong> in CSS control the space an element occupies on a webpage. They help define how wide, tall, or visible elements are to ensure the layout looks balanced across devices.</p><h3>Width and Height</h3><p><strong>Width</strong> defines how wide an element is, while <strong>height</strong> sets its vertical size. Both accept values in <em>pixels (px)</em>, <em>percentages (%)</em>, <em>em</em>, or <em>auto</em>.</p><pre>div{width:200px;height:150px;}</pre><p>If you set <code>width:100%;</code>, the element expands to fill the available horizontal space.</p><h3>Min and Max Values</h3><ul><li><strong>min-width</strong>/<strong>min-height</strong> — the smallest size the element can shrink to.</li><li><strong>max-width</strong>/<strong>max-height</strong> — the largest size the element can expand to.</li></ul><pre>img{min-width:100px;max-width:300px;}</pre></section>
+<section id="visibility" class="card"><h2>Visibility Property</h2><p>The <strong>visibility</strong> property decides whether an element is displayed or hidden. Unlike <code>display:none;</code>, hidden elements with <code>visibility:hidden;</code> still take up space in the layout.</p><h3>Possible Values</h3><ul><li><strong>visible</strong> — element is shown (default).</li><li><strong>hidden</strong> — element becomes invisible but keeps its space.</li><li><strong>collapse</strong> — used in table rows or columns to hide them entirely.</li></ul><pre>p{visibility:hidden;}</pre><p>This property is useful when temporarily hiding elements without affecting the overall page structure.</p></section>
+<section id="pseudo" class="card"><h2>Pseudo-Classes in CSS</h2><p><strong>Pseudo-classes</strong> define styles based on the state of an element, like when a link is clicked, hovered, or visited. They make web pages more interactive and visually responsive.</p><h3>Common Link Pseudo-Classes</h3><ul><li><code>:link</code> — styles normal, unvisited links.</li><li><code>:visited</code> — styles links the user has already clicked.</li><li><code>:hover</code> — activates when the mouse pointer is over the link.</li><li><code>:active</code> — applies while the link is being clicked.</li><li><code>:focus</code> — applies when the element (e.g., a form input) is selected.</li></ul><h3>Order of Link States (LVHA)</h3><p>To ensure proper styling, pseudo-classes should appear in this specific order:</p><p><strong>LVHA — :link → :visited → :hover → :active</strong></p><p>This prevents conflicts between hover and active styles.</p><h3>Example:</h3><pre>a:link{color:lightblue;}a:visited{color:purple;}a:hover{color:red;text-decoration:underline;}a:active{color:yellow;}</pre></section>
+<section id="examples" class="card"><h2>Code Example</h2><p>Here’s a short demo showing both dimension and pseudo-class properties together:</p><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.box{width:200px;height:100px;background-color:crimson;color:white;text-align:center;line-height:100px;}
+a:link{color:cyan;}a:visited{color:purple;}a:hover{color:yellow;}a:active{color:orange;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="box"&gt;Hover over &lt;a href="#"&gt;this link&lt;/a&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></section>
+<section id="summary" class="card"><h2>Summary</h2><ul><li>Dimensions define how large or small an element appears (using width, height, min/max).</li><li>Visibility controls whether an element is shown but still occupies space.</li><li>Pseudo-classes let you change appearance based on user actions (hover, click, visited).</li><li>LVHA order ensures consistent link styling.</li><li>Combining these allows better structure and interactivity in your web design.</li></ul></section>
+</main>
+<footer>© 2025 Lesson 6 — CSS Dimensions and Pseudo-Classes | Designed by Sefie Labador</footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>LoveAdore Website</title>
+
+<style>
+body {margin: 0;background: url("SPIDERMANN.jpeg") no-repeat center center fixed;background-size: cover;height: 100vh;display: flex;justify-content: center;align-items: center;position: relative;}
+
+body::before {content: "";position: absolute;top: 0; left: 0;width: 100%; height: 100%;background: rgba(0, 0, 0, 0.6);z-index: 0;}
+
+.content {position: relative;z-index: 1;background: rgba(139, 0, 0, 0.9);padding: 50px 80px;border-radius: 10px;text-align: center;box-shadow: 0 0 30px rgba(0,0,0,0.8);}
+
+h1 {font-size: 70px;font-weight: 900;color: #ffffff;margin-bottom: 20px;text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);}
+
+p {font-size: 20px;color: #f2f2f2;font-weight: 600;margin-bottom: 30px;text-shadow: 2px 2px 5px rgba(0,0,0,0.8);}
+
+a {display: inline-block;background: #ff3333;color: white;padding: 14px 28px;border-radius: 6px;text-decoration: none;font-weight: bold;font-size: 16px;transition: 0.3s ease;}
+
+a:hover {background: #cc0000;transform: scale(1.05);}
+</style>
+</head>
+<body><div class="content"><h1>Welcome to My Website</h1><p>I am Josephine Grace P. Labador from 9-FIDELITY</p><a href="2 MAINPAGE.html">Explore More</a></div>
+</body>
+</html>
+

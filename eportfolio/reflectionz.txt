@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<title>TLE / ICT — Reflections</title>
+<style type="text/css">
+:root{--red:#ff2a2a;--dark:#0b0202;--darker:#150000;--light:#fff2f2;}
+
+body{margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(135deg,rgba(10,0,0,1),rgba(60,0,0,0.9)),url("htmlbg.jpeg")center/cover fixed no-repeat;color:var(--light);text-align:center;min-height:100vh;}
+
+header{padding:50px 20px 30px;text-shadow:0 0 15px var(--red);}
+header h1{font-family:'Montserrat',sans-serif;font-weight:900;font-size:48px;color:var(--red);letter-spacing:2px;}
+header p{font-size:18px;color:#ffbdbd;margin-top:10px;}
+
+.reflections{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;max-width:1200px;margin:40px auto;padding:20px;}
+
+.card{background:linear-gradient(180deg,rgba(40,0,0,0.7),rgba(0,0,0,0.8));border:1px solid rgba(255,60,60,0.2);border-radius:16px;box-shadow:0 0 20px rgba(255,0,0,0.2);padding:25px;text-align:left;transition:all .3s ease;position:relative;overflow:hidden;}
+.card::before{content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,0,0,0.15)0%,transparent70%);animation:pulse 6s infinite alternate;z-index:0;}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 40px rgba(255,0,0,0.4);border-color:rgba(255,80,80,0.4);}
+.card h2{font-family:'Montserrat',sans-serif;color:var(--red);font-size:24px;z-index:1;position:relative;text-shadow:0 0 10px rgba(255,0,0,0.7);}
+.card p{position:relative;z-index:1;font-size:16px;color:#ffecec;line-height:1.8;margin-top:10px;}
+
+footer{margin-top:50px;padding:20px;font-size:14px;background:rgba(40,0,0,0.9);border-top:1px solid rgba(255,50,50,0.2);text-shadow:0 0 5px rgba(255,0,0,0.6);}
+</style>
+</head>
+<body>
+<header>
+<h1>TLE / ICT — CSS Reflections</h1>
+<p>Learnings and Thoughts from Lessons 1 to 6</p>
+</header>
+<section class="reflections">
+<div class="card">
+<h2>Lesson 1 — What is CSS?</h2>
+<p>I learned that CSS makes websites look nice and not plain. It helps add colors, sizes, and designs to words and pictures. I realized HTML is for the content, and CSS is for the looks. It’s cool how one style can change many pages at the same time.</p>
+</div>
+<div class="card">
+<h2>Lesson 2 — Style Sheets: Structure & Types</h2>
+<p>This lesson taught me how CSS rules are made using selectors, properties, and values. I also learned there are three kinds of CSS — external, internal, and inline. I think external is the best because it can fix many pages fast. It made me want to write cleaner and neater code.</p>
+</div>
+<div class="card">
+<h2>Lesson 3 — Selectors & Properties</h2>
+<p>I found out that selectors tell what part of a webpage to style. There are class and ID selectors too, which make styling easier. I liked learning how small CSS rules like colors and spacing can make a big change. It made me careful when I design my page.</p>
+</div>
+<div class="card">
+<h2>Lesson 4 — Colors, Fonts, & Text</h2>
+<p>I learned how to use different colors like RGB and HEX, and how to change fonts to make words look fun or serious. I also liked adding text shadows and spacing to make it look better. It showed me how choosing the right color and font makes a page more exciting to read.</p>
+</div>
+<div class="card">
+<h2>Lesson 5 — My Reflection</h2>
+<p>In Lesson 5, I learned how to use layout and simple CSS tricks to make my website look organized. It was fun to mix everything I learned before. I think CSS is really cool because it makes a boring website turn into something creative and beautiful.</p>
+</div>
+<div class="card">
+<h2>Lesson 6 — Dimensions & Pseudo-Classes</h2>
+<p>This lesson was fun because I learned how to control the size of things on a webpage using width and height. I also learned about pseudo-classes like hover and active that make websites move or change color when you point or click. It made me feel like I can make websites more alive and not boring.</p>
+</div>
+</section>
+<footer>© 2025 Las Piñas City National Science High School — Designed by Josephine Grace P. Labador</footer>
+</body>
+</html>
+

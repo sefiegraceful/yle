@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lesson 1 — What is CSS?</title>
+<style type="text/css">
+:root{--bg-dark:#0b0202;--card-dark:#1b0404;--accent:#ff4b4b;  --accent-2:#ff8080;  --muted:#f3eaea;  --glass: rgba(255,255,255,0.03);}
+
+body{height:100%;margin:0;font-family:'Poppins',system-ui,Arial,sans-serif;color:var(--muted);background:radial-gradient(circle at top left, rgba(60,0,0,0.6), rgba(0,0,0,0.85)),url('download.jpeg') center/cover fixed no-repeat}
+main{max-width:1100px;margin:40px auto;padding:28px}
+
+.header{padding:28px;text-align:center;border-radius:14px;background:linear-gradient(180deg, rgba(20,2,2,0.6), rgba(0,0,0,0.45));box-shadow:0 12px 40px rgba(255,0,0,0.12);border:1px solid rgba(255,75,75,0.08)}
+.header h1{margin:0;font-family:'Montserrat',sans-serif;font-size:34px;background:linear-gradient(90deg,var(--accent),#8b0000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 16px rgba(255,0,0,0.18)}
+.header p{margin:8px 0 0;color:#ffdede;font-weight:500}
+
+.nav{display:flex;gap:10px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+
+.pill{background:linear-gradient(180deg, rgba(139,0,0,0.95), rgba(90,0,0,0.95));padding:10px 16px;border-radius:999px;color:#fff;font-weight:700;border:2px solid rgba(255,80,80,0.12);text-decoration:none;box-shadow:0 8px 25px rgba(255,0,0,0.08)}
+
+.layout{display:grid;grid-template-columns:1fr 360px;gap:28px}
+
+.card{background:linear-gradient(180deg, rgba(20,2,2,0.55), rgba(8,1,1,0.65));padding:26px;border-radius:14px;border:1px solid rgba(255,60,60,0.08);box-shadow:0 14px 45px rgba(0,0,0,0.55)}
+.card h2{color:var(--accent-2);margin-top:0;text-shadow:0 0 12px rgba(255,0,0,0.12)}
+
+.small{color:#ffdede;font-size:0.95rem}
+
+.section-title{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,20,20,0.06);border:1px solid rgba(255,80,80,0.12);color:var(--accent);font-weight:800;margin-bottom:10px}
+
+.article p{line-height:1.7;margin:12px 0}
+.article ul{margin:12px 0 12px 1.1rem}
+.article ol{margin:12px 0 12px 1.1rem}
+
+pre{background:var(--glass);padding:14px;border-radius:10px;overflow:auto;border:1px solid rgba(255,255,255,0.03);font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;color:#ffeaea}
+
+.code-inline{background:rgba(255,255,255,0.04);padding:2px 6px;border-radius:6px;font-family:ui-monospace,monospace}
+
+.aside{background:linear-gradient(180deg, rgba(30,6,6,0.55), rgba(12,2,2,0.6));padding:20px;border-radius:12px;border:1px solid rgba(255,60,60,0.06)}
+.aside h3{margin-top:0;color:var(--accent-2)}
+
+.footer{margin-top:20px;text-align:center;color:#ffdede;font-size:0.95rem}
+
+/*the one sa side rin*/
+.toc{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.toc a{display:block;color:var(--accent-2);text-decoration:none;margin:8px 0}
+</style>
+</head>
+<body>
+<main>
+<header class="header">
+<h1>Lesson 1 — What is CSS?</h1>
+<p>Complete lesson: overview, benefits, layers, examples, and best practices</p>
+</header>
+
+<nav class="nav">
+<a class="pill" href="#definition">Definition</a>
+<a class="pill" href="#why">Why use CSS</a>
+<a class="pill" href="#layers">Layers of a Webpage</a>
+<a class="pill" href="#benefits">Benefits & Capabilities</a>
+<a class="pill" href="#examples">Examples</a>
+<a class="pill" href="#prereq">Prerequisite</a>
+</nav>
+
+<div class="layout">
+<article class="card article">
+<span class="section-title">Lesson 1</span>
+<h2 id="definition">Definition</h2>
+<p>CSS stands for <strong>Cascading Style Sheets</strong>. It describes how HTML elements are presented on screen, paper, or other media.
+CSS separates content from presentation: HTML holds the structure and content, while CSS defines the visual style.
+With CSS, you can control layout, typography, color, spacing, and responsive behavior across devices.
+CSS enables consistent styling across many pages through a single stylesheet and offers mechanisms for progressive enhancement of presentation.</p>
+
+<h2 id="why">Why use CSS?</h2>
+<p>CSS is used to define the styles for web pages including the design, layout and variations for different devices and screen sizes. 
+CSS provides consistency across pages, reduces duplication, improves maintainability, and enables responsive and accessible design. Key reasons to use CSS include:</p>
+<ul>
+<li>Separation of concerns — keeps content (HTML) distinct from presentation (CSS).</li>
+<li>Reusability — one stylesheet can control many pages or components.</li>
+<li>Efficiency — faster maintenance and updates; change a rule once to affect the whole site.</li>
+<li>Accessibility & responsiveness — allows control for zoom, contrast, and device-specific rules.</li>
+<li>Visual capabilities — layouts, transitions, animations, grid and flexbox, and custom properties.</li>
+</ul>
+
+<h2 id="layers">Layers of a Webpage</h2>
+<p>Web pages are typically organized into three logical layers. Each layer has a distinct role and responsibility:</p>
+<ol>
+<li><strong>Content layer (HTML)</strong> — provides structured content such as headings, paragraphs, lists, images and links. 
+Use semantic HTML and accessible alt text for images. Keep content clear and concise.</li>
+<li><strong>Presentation layer (CSS)</strong> — controls appearance: colors, typography, layout, spacing, and visual hierarchy. 
+Ensure good contrast and readable typography, apply responsive rules, and avoid styling that breaks accessibility.</li>
+<li><strong>Behavior layer (JavaScript)</strong> — adds interactivity, dynamic content changes, and enhanced user experience. 
+Behavior should be progressive: the page should remain functional without JS for critical content.</li>
+</ol>
+
+<h2 id="benefits">Benefits & Capabilities</h2>
+<p>CSS provides a broad set of capabilities and important practical benefits:</p>
+<ul>
+<li><strong>Easy maintenance:</strong> change one stylesheet to update site-wide appearance.</li>
+<li><strong>Performance:</strong> smaller HTML files; cached stylesheets improve page load times.</li>
+<li><strong>Precise layout control:</strong> CSS Grid and Flexbox allow modern, robust layouts.</li>
+<li><strong>Reusable design tokens:</strong> custom properties (CSS variables) let you centralize theme values like colors and spacing.</li>
+<li><strong>Visual polishing:</strong> transitions, transforms, and filters add subtle, performant visual enhancements.</li>
+<li><strong>Print & accessibility:</strong> control print stylesheets and high-contrast or reduced-motion preferences.</li>
+</ul>
+
+<h2 id="examples">Examples & Syntax Notes</h2>
+<p>CSS rules are made of a selector and a declaration block. Each declaration includes a property and a value:</p>
+<pre>selector { property: value; property2: value2; }</pre>
+
+<p>Simple example:</p>
+<pre>p { font-family: Arial, sans-serif; color: green; font-size: 16px; }</pre>
+
+<p>Three ways to include CSS:</p>
+<ul>
+<li><strong>External stylesheet</strong> — separate <span class="code-inline">.css</span> file linked via <span class="code-inline">&lt;link rel="stylesheet" href="style.css"&gt;</span>. 
+Best for multiple pages and consistent site-wide design.</li>
+<li><strong>Embedded/Internal stylesheet</strong> — placed inside the page within a <span class="code-inline">&lt;style&gt;</span> tag in 
+<span class="code-inline">&lt;head&gt;</span>. Useful for page-specific styles that override external rules.</li>
+<li><strong>Inline styles</strong> — style attribute directly on an element (e.g., <span class="code-inline">&lt;p style="color:red"&gt;</span>). 
+Use sparingly for single adjustments; inline has highest specificity and overrides external and embedded styles.</li>
+</ul>
+
+<h3>Display property and element types</h3>
+<p>Elements are either block-level or inline by default. The <span class="code-inline">display</span> property controls rendering behavior:</p>
+<pre> div, p { display: block; }
+span, a { display: inline; }
+.hidden { display: none; }</pre>
+
+<h3>Classes and reuse</h3>
+<p>CSS classes are declared with a dot prefix and applied via the <span class="code-inline">class</span> attribute. Classes are the primary way to create reusable styles:</p>
+<pre>.highlight { background-color: yellow; color: black; padding: 6px; border-radius: 6px; }</pre>
+<p>Multiple classes can be combined on the same element:</p>
+<pre>&lt;div class="highlight large"&gt;Important&lt;/div&gt;</pre>
+
+<h3>Grouping selectors</h3>
+<p>Grouping selectors reduces repetition and keeps CSS concise:</p>
+<pre>h1, h2, h3 { color: white; }</pre>
+
+<h2 id="prereq">Prerequisite</h2>
+<p>Basic knowledge of HTML is required before learning CSS. Understanding semantic HTML elements (headings, paragraphs, lists, images, links, forms) makes it easier to apply meaningful, accessible styles.</p>
+
+<h2>Best Practices</h2>
+<ul>
+<li>Keep CSS modular and organized (use meaningful class names and separate concerns).</li>
+<li>Prefer external stylesheets for maintainability and caching benefits.</li>
+<li>Use variables for theme values and consistent spacing.</li>
+<li>Test responsiveness across devices and respect user preferences (prefers-reduced-motion, forced-colors).</li>
+<li>Provide sufficient contrast and readable font sizes for accessibility.</li>
+</ul>
+
+<h2>Reference Cheatsheet :))</h2>
+<pre>
+p { margin: 0 0 1rem 0; }
+
+h1 { font-size: 2rem; font-weight: 700; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+.row { display: flex; gap: 12px; align-items: center; }
+</pre>
+
+
+</article>
+<aside class="aside">
+<h3>On this page</h3>
+<div class="toc">
+<a href="#definition">Definition</a>
+<a href="#why">Why use CSS</a>
+<a href="#layers">Layers of a Webpage</a>
+<a href="#benefits">Benefits & Capabilities</a>
+<a href="#examples">Examples & Syntax</a>
+<a href="#prereq">Prerequisite</a>
+</div>
+
+<h3 style="margin-top:18px">Quick Tips</h3>
+<ul>
+<li>Use semantic HTML for accessibility.</li>
+<li>Start with a mobile-first approach: style for small screens then add breakpoints.</li>
+<li>Keep CSS selectors specific but not overly specific; prefer classes over IDs for styling.</li>
+<li>Use rem/em units for scalable typography and spacing.</li>
+</ul>
+
+<h3 style="margin-top:18px">Useful links I use :)</h3>
+<p class="small">MDN CSS reference, W3C CSS specifications, and accessibility guidelines are recommended reading for deeper study.</p>
+</aside>
+</div>
+
+<div class="footer">
+<p>© Lesson 1 --- TLE 2ND QTR <strong>by Labador</strong>.</p>
+</div>
+</main>
+</body>
+</html>
+

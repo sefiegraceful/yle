@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lesson 2 — Style Sheets</title>
+<style type="text/css">
+:root{--bg-dark:#0b0202;--card-dark:#1b0404;--accent:#ff4b4b;  --accent-2:#ff8080;  --muted:#f3eaea;  --glass: rgba(255,255,255,0.03);}
+
+body{height:100%;margin:0;font-family:'Poppins',system-ui,Arial,sans-serif;color:var(--muted);background:radial-gradient(circle at top left, rgba(60,0,0,0.6), rgba(0,0,0,0.85)),url('download.jpeg') center/cover fixed no-repeat}
+main{max-width:1100px;margin:40px auto;padding:28px}
+
+.header{padding:28px;text-align:center;border-radius:14px;background:linear-gradient(180deg, rgba(20,2,2,0.6), rgba(0,0,0,0.45));box-shadow:0 12px 40px rgba(255,0,0,0.12);border:1px solid rgba(255,75,75,0.08)}
+.header h1{margin:0;font-family:'Montserrat',sans-serif;font-size:34px;background:linear-gradient(90deg,var(--accent),#8b0000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 16px rgba(255,0,0,0.18)}
+.header p{margin:8px 0 0;color:#ffdede;font-weight:500}
+
+.nav{display:flex;gap:10px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+
+.pill{background:linear-gradient(180deg, rgba(139,0,0,0.95), rgba(90,0,0,0.95));padding:10px 16px;border-radius:999px;color:#fff;font-weight:700;border:2px solid rgba(255,80,80,0.12);text-decoration:none;box-shadow:0 8px 25px rgba(255,0,0,0.08)}
+
+.layout{display:grid;grid-template-columns:1fr 360px;gap:28px}
+
+.card{background:linear-gradient(180deg, rgba(20,2,2,0.55), rgba(8,1,1,0.65));padding:26px;border-radius:14px;border:1px solid rgba(255,60,60,0.08);box-shadow:0 14px 45px rgba(0,0,0,0.55)}
+.card h2{color:var(--accent-2);margin-top:0;text-shadow:0 0 12px rgba(255,0,0,0.12)}
+
+.small{color:#ffdede;font-size:0.95rem}
+
+.section-title{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,20,20,0.06);border:1px solid rgba(255,80,80,0.12);color:var(--accent);font-weight:800;margin-bottom:10px}
+
+.article p{line-height:1.7;margin:12px 0}
+.article ul{margin:12px 0 12px 1.1rem}
+.article ol{margin:12px 0 12px 1.1rem}
+
+pre{background:var(--glass);padding:14px;border-radius:10px;overflow:auto;border:1px solid rgba(255,255,255,0.03);font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;color:#ffeaea}
+
+.code-inline{background:rgba(255,255,255,0.04);padding:2px 6px;border-radius:6px;font-family:ui-monospace,monospace}
+
+.aside{background:linear-gradient(180deg, rgba(30,6,6,0.55), rgba(12,2,2,0.6));padding:20px;border-radius:12px;border:1px solid rgba(255,60,60,0.06)}
+.aside h3{margin-top:0;color:var(--accent-2)}
+
+.footer{margin-top:20px;text-align:center;color:#ffdede;font-size:0.95rem}
+
+/*the one sa side rin*/
+.toc{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.toc a{display:block;color:var(--accent-2);text-decoration:none;margin:8px 0}
+</style>
+</head>
+<body>
+<main>
+<header class="header">
+<h1>Lesson 2 — Style Sheets</h1>
+<p>Structure, types, syntax, examples, and best practices</p>
+</header>
+<nav class="nav">
+<a class="pill" href="#structure">Structure of CSS</a>
+<a class="pill" href="#how">How Style Sheets Work</a>
+<a class="pill" href="#kinds">Three Kinds of CSS</a>
+<a class="pill" href="#examples">Examples & Linking</a>
+<a class="pill" href="#comments">Comments</a>
+</nav>
+<div class="layout">
+<article class="card article">
+<span class="section-title">Lesson 2</span>
+<h2 id="structure">What will we use in CSS / Structure of CSS</h2>
+<p>Basic tokens and parts used in CSS include curly braces <span class="code-inline">{ }</span>, colons <span class="code-inline">:</span>, semicolons <span class="code-inline">;</span>, selectors and declarations.</p>
+<p>A complete CSS rule consists of:</p>
+<ul>
+<li><strong>Selector</strong> — the HTML element or pattern you want to style; it is used to find the elements on a webpage to which the CSS rules will apply.</li>
+<li><strong>Declaration block</strong> — a block of one or more declarations enclosed in braces <span class="code-inline">{ ... }</span>.</li>
+<li><strong>Declaration</strong> — a single instruction that defines a specific style (a property and a value).</li>
+<li><strong>Property</strong> — the style attribute to modify (for example <span class="code-inline">font-family</span>, <span class="code-inline">color</span>).</li>
+<li><strong>Value</strong> — the specific setting assigned to a property (for example <span class="code-inline">Arial</span>, <span class="code-inline">red</span>).</li>
+</ul>
+<h2 id="how">How Do Style Sheets Work?</h2>
+<p>Style sheets are text files (or text embedded in an HTML document's head) that separate content from appearance. HTML contains the content and structure; CSS contains presentation rules. A stylesheet suggests to the browser how to render elements in a particular way.</p>
+<p>When authoring CSS keep these traditional notes in mind (historical guidance from modules):</p>
+<ol>
+<li>Older practice: <span class="code-inline">&lt;style type="text/css"&gt;</span> (modern browsers accept &lt;style&gt; without the type).</li>
+<li>Historically some guides suggested enclosing CSS in HTML comments so older browsers would ignore it; today all modern browsers support CSS so this is no longer necessary.</li>
+</ol>
+<h2 id="kinds">Three Kinds of CSS</h2>
+<p>CSS can be added to pages in three ways. Each has use-cases, precedence, and trade-offs.</p>
+<h3>External Style Sheets</h3>
+<p>External styles are stored in separate <span class="code-inline">.css</span> files. They are ideal for site-wide consistency because a single file can style many pages. Benefits include easy updating and caching by browsers. External files contain only CSS rules and no HTML.</p>
+<h3>Embedded / Internal Style Sheets</h3>
+<p>Embedded styles appear inside a page inside a &lt;style&gt; block in the &lt;head&gt;. Use this for page-specific styles or temporary overrides. Embedded rules override external rules when both apply.</p>
+<h3>Inline Styles</h3>
+<p>Inline styles are written directly on an element with the <span class="code-inline">style</span> attribute. They affect only that element and have the highest specificity (override embedded and external rules). Use sparingly for one-off changes.</p>
+<h2 id="examples">Syntax & Examples</h2>
+<p>Typical syntax examples:</p>
+<pre>/* external link example */
+&lt;link rel="stylesheet" href="style.css" type="text/css"&gt;
+
+/* embedded */
+&lt;style type="text/css"&gt;
+  p { font-family: Comic Sans MS; color: green; }
+&lt;/style&gt;
+
+/* inline */
+&lt;p style="font-family:Arial; color:red"&gt;This is a styled paragraph.&lt;/p&gt;
+</pre>
+<p>Notes and small rules:</p>
+<ul>
+<li>When listing multiple font families, separate with commas: <span class="code-inline">font-family: Arial, Helvetica, Verdana;</span></li>
+<li>Separate declarations with semicolons: <span class="code-inline">font-family:Arial; color:red; text-align:justify;</span></li>
+</ul>
+<h3>Creating and Linking External CSS</h3>
+<p>Steps to create a basic external CSS file:</p>
+<ol>
+<li>Open a blank document (Notepad or any editor).</li>
+<li>Type the CSS rules you want.</li>
+<li>Save the file with a <span class="code-inline">.css</span> extension (e.g., <span class="code-inline">style.css</span>).</li>
+<li>Link it inside your HTML head with: <span class="code-inline">&lt;link rel="stylesheet" href="sample.css" type="text/css"&gt;</span></li>
+</ol>
+<h2 id="comments">CSS Comments</h2>
+<p>CSS supports comments to explain code or leave notes. Comments are ignored by browsers and useful for readability. Syntax:</p>
+<pre>/* This is a single-line or multi-line CSS comment */</pre>
+<h2>Practical Tips & Best Practices</h2>
+<ul>
+<li>Prefer external stylesheets for multi-page sites to simplify maintenance.</li>
+<li>Use embedded styles only when a page needs unique styling that overrides site-wide rules.</li>
+<li>Avoid heavy use of inline styles; they make maintenance harder.</li>
+<li>Organize rules logically (typography, layout, components) and comment sections for clarity.</li>
+<li>Test across browsers; modern browsers generally conform to current CSS specs.</li>
+</ul>
+<h2>Sample Code Demonstration</h2>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Paragraphs&lt;/title&gt;
+&lt;style type="text/css"&gt;
+p{ font-family: Comic Sans MS; color: green; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;This is the first paragraph.&lt;/p&gt;
+&lt;p style="font-family:Arial; color:red"&gt;This is the third paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<aside class="aside">
+<h3>On this page</h3>
+<div class="toc">
+<a href="#structure">Structure of CSS</a>
+<a href="#how">How Style Sheets Work</a>
+<a href="#kinds">Three Kinds of CSS</a>
+<a href="#examples">Examples & Linking</a>
+<a href="#comments">Comments</a>
+</div>
+<h3 style="margin-top:18px">Quick Notes</h3>
+<ul>
+<li>External &gt; Embedded &gt; Inline (in terms of maintainability and reuse).</li>
+<li>Remember to keep CSS syntax accurate: <code>selector { property: value; }</code></li>
+<li>Use browser dev tools to inspect computed styles and cascade.</li>
+</ul>
+
+<div class="footer">
+<p>© Lesson 2 — Style Sheets. By Labador</p>
+</div>
+</main>
+</body>
+</html>

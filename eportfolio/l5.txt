@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+<title>Lesson 5 — CSS Selectors</title>
+<style type="text/css">
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0b0202;--accent:#ff4b4b;--light:#ffdede;--card:#1a0505;}
+
+body{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,rgba(20,2,2,0.85),rgba(0,0,0,0.9)),url('download.jpeg') center/cover fixed no-repeat;color:var(--light);line-height:1.7;}
+
+header{text-align:center;padding:40px 16px;background:rgba(0,0,0,0.5);border-bottom:1px solid rgba(255,80,80,0.15);}
+
+header h1{font-family:'Montserrat',sans-serif;font-size:40px;background:linear-gradient(90deg,var(--accent),#8b0000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 14px rgba(255,0,0,0.4);}
+
+header p{color:#ffbcbc;margin-top:10px;}
+
+main{max-width:1000px;margin:40px auto;background:rgba(20,2,2,0.55);padding:30px;border-radius:18px;border:1px solid rgba(255,60,60,0.15);box-shadow:0 0 35px rgba(255,0,0,0.25);}
+
+h2{color:var(--accent);margin:22px 0 10px;}
+
+h3{color:#ff8080;margin:16px 0 8px;}
+
+ul,ol{margin-left:22px;margin-bottom:14px;}
+
+pre{background:rgba(255,255,255,0.05);padding:10px;border-radius:10px;font-size:0.95rem;color:#ffeaea;overflow:auto;border:1px solid rgba(255,255,255,0.08);}
+
+.card{background:rgba(0,0,0,0.55);border:1px solid rgba(255,80,80,0.15);border-radius:12px;padding:20px;margin:18px 0;transition:transform 0.25s, box-shadow 0.25s;}
+
+.card:hover{transform:translateY(-4px);box-shadow:0 0 25px rgba(255,0,0,0.35);}
+
+footer{text-align:center;margin:30px 0;color:#ffbdbd;}
+</style>
+</head>
+<body>
+<header>
+<h1>Lesson 5 — CSS Selectors</h1>
+<p>Understanding the different kinds of selectors and how they define element styling</p>
+</header>
+
+<main>
+<h2>What are CSS Selectors?</h2>
+<p>Selectors are patterns used in CSS to target specific HTML elements so you can apply styles to them. They act as the bridge between HTML content and the visual rules defined in CSS. Each selector type serves a purpose, from styling all elements at once to targeting a single item precisely.</p>
+
+<div class="card">
+<h3>1. Element Selector</h3>
+<p>The <strong>element selector</strong> applies a style to all occurrences of a specific HTML tag. It’s the simplest and most common selector type.</p>
+<pre>
+p {
+  color: red;
+  font-size: 16px;
+}
+</pre>
+<p>This affects every <span style="color:#ff8888">paragraph (&lt;p&gt;)</span> in the document. It’s best used for general, consistent styling across an entire site.</p>
+</div>
+
+<div class="card">
+<h3>2. Class Selector</h3>
+<p>The <strong>class selector</strong> starts with a period (<code>.</code>) and is used to style multiple elements sharing the same class name. It’s one of the most flexible selectors in CSS.</p>
+<pre>
+.notice { color: yellow; background-color: black; }
+</pre>
+<pre>
+&lt;p class="notice"&gt;Take note of this important update.&lt;/p&gt;
+</pre>
+<p>Classes are reusable, meaning the same class can be assigned to many elements across different sections.</p>
+</div>
+
+<div class="card">
+<h3>3. ID Selector</h3>
+<p>The <strong>ID selector</strong> targets a single, unique element on the page. It uses a hash symbol (<code>#</code>) before the identifier name.</p>
+<pre>
+#main-title { font-size: 24px; color: crimson; text-align: center; }
+</pre>
+<pre>
+&lt;h1 id="main-title"&gt;Welcome to my website&lt;/h1&gt;
+</pre>
+<p>Because IDs must be unique within a page, this selector is perfect for elements that only appear once, such as headers or footers.</p>
+</div>
+
+<div class="card">
+<h3>4. Universal Selector</h3>
+<p>The <strong>universal selector</strong> uses an asterisk (<code>*</code>) to apply styles to all elements in a webpage. It’s useful for setting consistent base styles like font or margin resets.</p>
+<pre>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</pre>
+<p>This ensures a uniform starting layout by resetting default browser spacing.</p>
+</div>
+
+<div class="card">
+<h3>5. Group Selector</h3>
+<p>The <strong>group selector</strong> combines multiple selectors separated by commas, allowing them to share the same style rules. This saves time and keeps your code clean.</p>
+<pre>
+h1, h2, h3 {
+  color: white;
+  text-transform: uppercase;
+}
+</pre>
+<p>All headings (h1–h3) now have the same color and text formatting. It’s efficient for applying identical rules to similar elements.</p>
+</div>
+
+<div class="card">
+<h3>6. Attribute Selector</h3>
+<p>The <strong>attribute selector</strong> styles elements based on the presence or value of a specific attribute. It’s powerful for forms, links, or custom data attributes.</p>
+<pre>
+input[type="text"] {
+  border: 2px solid red;
+  padding: 8px;
+}
+a[target="_blank"] {
+  color: orange;
+}
+</pre>
+<p>These rules style only text input boxes and links that open in new tabs. Attribute selectors are especially handy in modern responsive designs.</p>
+</div>
+
+<h2>Quick Comparison</h2>
+<ul>
+<li><strong>Element</strong> — applies to all specific tags.</li>
+<li><strong>Class</strong> — reusable for many elements.</li>
+<li><strong>ID</strong> — targets a single unique element.</li>
+<li><strong>Universal</strong> — affects everything on the page.</li>
+<li><strong>Group</strong> — applies shared styles to several selectors.</li>
+<li><strong>Attribute</strong> — targets elements based on attributes.</li>
+</ul>
+
+<h2>Tips and Good Practices</h2>
+<ul>
+<li>Use <strong>classes</strong> for reusable styles instead of IDs whenever possible.</li>
+<li>Keep selector names meaningful and descriptive.</li>
+<li>Avoid overusing universal selectors, as they can affect performance.</li>
+<li>Combine selectors logically to keep your stylesheet organized and efficient.</li>
+<li>Validate your CSS using browser developer tools to check if rules are applied correctly.</li>
+</ul>
+
+<h2>Example: Putting It All Together</h2>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  * { font-family: Arial; }
+  h1 { color: crimson; }
+  .highlight { background-color: yellow; }
+  #unique { border-bottom: 3px solid red; }
+  a[target="_blank"] { color: orange; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 id="unique"&gt;Lesson 5: CSS Selectors&lt;/h1&gt;
+&lt;p class="highlight"&gt;This paragraph uses a class selector.&lt;/p&gt;
+&lt;a href="https://example.com" target="_blank"&gt;External Link&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2>Summary</h2>
+<p>Selectors are the foundation of CSS. They determine which HTML elements get styled and how. By mastering the six main types—element, class, ID, universal, group, and attribute—you can create precise, organized, and visually consistent webpages. These tools give developers full control over design while keeping HTML clean and semantic.</p>
+</main>
+
+<footer>
+<p>© Lesson 5 — CSS Selectors | Based on uploaded module Lesson-5.pdf</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lesson 3 — Applying CSS to HTML Documents</title>
+<style type="text/css">
+:root{--bg-dark:#0b0202;--card-dark:#1b0404;--accent:#ff4b4b;  --accent-2:#ff8080;  --muted:#f3eaea;  --glass: rgba(255,255,255,0.03);}
+
+body{height:100%;margin:0;font-family:'Poppins',system-ui,Arial,sans-serif;color:var(--muted);background:radial-gradient(circle at top left, rgba(60,0,0,0.6), rgba(0,0,0,0.85)),url('download.jpeg') center/cover fixed no-repeat}
+main{max-width:1100px;margin:40px auto;padding:28px}
+
+.header{padding:28px;text-align:center;border-radius:14px;background:linear-gradient(180deg, rgba(20,2,2,0.6), rgba(0,0,0,0.45));box-shadow:0 12px 40px rgba(255,0,0,0.12);border:1px solid rgba(255,75,75,0.08)}
+.header h1{margin:0;font-family:'Montserrat',sans-serif;font-size:34px;background:linear-gradient(90deg,var(--accent),#8b0000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 16px rgba(255,0,0,0.18)}
+.header p{margin:8px 0 0;color:#ffdede;font-weight:500}
+
+.nav{display:flex;gap:10px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+
+.pill{background:linear-gradient(180deg, rgba(139,0,0,0.95), rgba(90,0,0,0.95));padding:10px 16px;border-radius:999px;color:#fff;font-weight:700;border:2px solid rgba(255,80,80,0.12);text-decoration:none;box-shadow:0 8px 25px rgba(255,0,0,0.08)}
+
+.layout{display:grid;grid-template-columns:1fr 360px;gap:28px}
+
+.card{background:linear-gradient(180deg, rgba(20,2,2,0.55), rgba(8,1,1,0.65));padding:26px;border-radius:14px;border:1px solid rgba(255,60,60,0.08);box-shadow:0 14px 45px rgba(0,0,0,0.55)}
+.card h2{color:var(--accent-2);margin-top:0;text-shadow:0 0 12px rgba(255,0,0,0.12)}
+
+.small{color:#ffdede;font-size:0.95rem}
+
+.section-title{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,20,20,0.06);border:1px solid rgba(255,80,80,0.12);color:var(--accent);font-weight:800;margin-bottom:10px}
+
+.article p{line-height:1.7;margin:12px 0}
+.article ul{margin:12px 0 12px 1.1rem}
+.article ol{margin:12px 0 12px 1.1rem}
+
+pre{background:var(--glass);padding:14px;border-radius:10px;overflow:auto;border:1px solid rgba(255,255,255,0.03);font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;color:#ffeaea}
+
+.code-inline{background:rgba(255,255,255,0.04);padding:2px 6px;border-radius:6px;font-family:ui-monospace,monospace}
+
+.aside{background:linear-gradient(180deg, rgba(30,6,6,0.55), rgba(12,2,2,0.6));padding:20px;border-radius:12px;border:1px solid rgba(255,60,60,0.06)}
+.aside h3{margin-top:0;color:var(--accent-2)}
+
+.footer{margin-top:20px;text-align:center;color:#ffdede;font-size:0.95rem}
+
+/*the one sa side rin*/
+.toc{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.toc a{display:block;color:var(--accent-2);text-decoration:none;margin:8px 0}
+</style>
+</head>
+
+<body>
+<main>
+<header>
+<h1>Lesson 3 — Applying CSS to HTML Documents</h1>
+<p>How CSS connects to HTML through inline, internal, and external styles</p>
+</header>
+
+<nav>
+<a class="pill" href="#methods">Methods of Applying CSS</a>
+<a class="pill" href="#display">Display Property</a>
+<a class="pill" href="#elements">Block vs Inline</a>
+<a class="pill" href="#containers">Div & Span</a>
+<a class="pill" href="#classes">Classes & Selectors</a>
+</nav>
+
+<section class="card" id="methods">
+<h2>Ways to Apply CSS in HTML</h2>
+<p>There are three main ways to connect CSS styles with your HTML document. All methods define how design rules are read and prioritized by the browser.</p>
+
+<h3>1. Inline CSS</h3>
+<p>Inline styling means placing the CSS directly inside the HTML tag using the <code>style</code> attribute. It affects only that specific element and overrides all other styles.</p>
+<pre>&lt;p style="color: green; font-size:18px;"&gt;This paragraph uses inline CSS.&lt;/p&gt;</pre>
+
+<h3>2. Internal (Embedded) CSS</h3>
+<p>Internal CSS is written between the <code>&lt;style&gt;</code> tags inside the <code>&lt;head&gt;</code> section. It can style multiple elements within the same HTML file and is useful for page-specific layouts.</p>
+<pre>&lt;style&gt;
+h1 { color:red; text-align:center; }
+p { color:purple; font-size:18px; }
+&lt;/style&gt;</pre>
+
+<h3>3. External CSS</h3>
+<p>External CSS stores all rules in a separate file with the extension <code>.css</code>. The HTML document links to it using a <code>&lt;link&gt;</code> tag. This method promotes consistency and easier maintenance because one stylesheet can style many pages.</p>
+<pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+
+<p>Example external file content:</p>
+<pre>body { background-color:black; color:white; font-family:Poppins; }</pre>
+
+<p><strong>Tip:</strong> When multiple styles conflict, the browser uses the <em>cascade order</em>: Inline &gt; Internal &gt; External.</p>
+</section>
+
+<section class="card" id="display">
+<h2>The Display Property</h2>
+<p>The <code>display</code> property determines how elements appear and occupy space on a webpage. It defines whether an element behaves like a block, inline, list, or flex item.</p>
+
+<h3>Common Display Values</h3>
+<ul>
+<li><strong>block</strong> – Takes the full width, starts on a new line (e.g. &lt;div&gt;, &lt;p&gt;).</li>
+<li><strong>inline</strong> – Flows alongside text and other inline items (e.g. &lt;a&gt;, &lt;span&gt;).</li>
+<li><strong>inline-block</strong> – Acts inline but allows height and width to be set.</li>
+<li><strong>none</strong> – Completely hides the element from the page.</li>
+<li><strong>list-item</strong> – Behaves like a list element (shows bullets or numbers).</li>
+</ul>
+
+<p>Examples:</p>
+<pre>p { display:inline; }
+span { display:block; }</pre>
+</section>
+
+<section class="card" id="elements">
+<h2>Block-Level vs Inline Elements</h2>
+<p>HTML elements are grouped by how they display on the page:</p>
+<ul>
+<li><strong>Block-level</strong> elements occupy full width and begin on a new line (e.g. &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;).</li>
+<li><strong>Inline</strong> elements appear side by side and only take as much space as needed (e.g. &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;span&gt;, &lt;i&gt;).</li>
+</ul>
+
+<pre>&lt;p&gt;This is &lt;span style="color:red;"&gt;inline&lt;/span&gt; text inside a block element.&lt;/p&gt;</pre>
+<p>Remember: inline elements cannot contain block-level ones, but block elements can include inline elements.</p>
+</section>
+
+<section class="card" id="containers">
+<h2>Using &lt;div&gt; and &lt;span&gt; Containers</h2>
+<p><strong>&lt;div&gt;</strong> and <strong>&lt;span&gt;</strong> are generic containers used for grouping content to style or position it with CSS.</p>
+<ul>
+<li><code>&lt;div&gt;</code> is a block-level element commonly used to group sections of content like headers or articles.</li>
+<li><code>&lt;span&gt;</code> is an inline container used for styling small text segments within a paragraph.</li>
+</ul>
+
+<h3>Examples</h3>
+<pre>&lt;div class="section1"&gt;This is a section grouped by a div.&lt;/div&gt;
+&lt;p&gt;This &lt;span style="color:crimson;"&gt;word&lt;/span&gt; is highlighted.&lt;/p&gt;</pre>
+</section>
+
+<section class="card" id="classes">
+<h2>Using Classes and Selectors</h2>
+<p>Classes allow you to assign reusable styles across multiple elements using the <code>class</code> attribute. In CSS, classes are declared with a period (<code>.</code>) followed by the class name.</p>
+
+<pre>.highlight { background-color:yellow; }
+.big-text { font-size:24px; font-weight:bold; }</pre>
+
+<p>HTML Example:</p>
+<pre>&lt;div class="highlight"&gt;Highlighted section&lt;/div&gt;
+&lt;p class="big-text"&gt;This text appears larger.&lt;/p&gt;</pre>
+
+<h3>Combining Classes</h3>
+<p>You can apply more than one class to an element by separating them with spaces:</p>
+<pre>&lt;p class="highlight big-text"&gt;Bright and large text&lt;/p&gt;</pre>
+
+<h3>Grouping Selectors</h3>
+<p>To apply the same rule to multiple elements, separate their selectors with commas:</p>
+<pre>h1, p { color:white; background-color:black; }</pre>
+</section>
+
+<footer>
+<p>© 2025 Lesson 3 — Applying CSS to HTML Documents | Designed by Sefie Labador</p>
+</footer>
+</main>
+</body>
+</html>
